@@ -1,4 +1,5 @@
 import PersonalInfo from '@/components/info/PersonalInfo'
+import StackInfo from '@/components/info/StackInfo'
 import TechStack from '@/components/info/TechStack'
 import withLayout from '@/hoc/withLayout'
 import Image from 'next/image'
@@ -16,31 +17,17 @@ const WhoAmI: React.FC = () => {
       />
 
       <TechStack>
-        <div className='mt-4 transition ease-in-out hover:scale-105 hover:shadow-xl'>
-          <div className='flex flex-col bg-background-box p-4 pr-12 pl-12 rounded-xl w-full'>
-            <div className='flex flex-col justify-center bg-background-box rounded-xl'>
-              <div className='font-serif font-bold text-4xl text-text-dark'>Frameworks</div>
-              <div className='relative h-32'>
-                <Image src='/Nextjs.png' alt='' fill style={{ objectFit: 'cover' }} />
-              </div>
-              <div className='relative h-12'>
-                <Image src='/sveltekit.png' alt='' fill style={{ objectFit: 'cover' }} />
-              </div>
-            </div>
+        <div className='flex gap-8'>
+          <div>
+            <StackInfo category='Frameworks' />
+            <StackInfo category='Libraries' />
+            <StackInfo category='CSS' />
           </div>
-        </div>
-
-        <div className='mt-4 transition ease-in-out hover:scale-105 hover:shadow-xl'>
-          <div className='flex flex-col bg-background-box p-4 pr-12 pl-12 rounded-xl w-full'>
-            <div className='flex flex-col justify-center bg-background-box rounded-xl'>
-              <div className='font-serif font-bold text-4xl text-text-dark'>Frameworks</div>
-              <div className='relative h-32'>
-                <Image src='/Nextjs.png' alt='' fill style={{ objectFit: 'cover' }} />
-              </div>
-              <div className='relative h-12'>
-                <Image src='/sveltekit.png' alt='' fill style={{ objectFit: 'cover' }} />
-              </div>
-            </div>
+          <div>
+            <StackInfo category='Languages' />
+            <StackInfo category='Package Manager' />
+            <StackInfo category='Communication' />
+            <StackInfo category='AI Manager' />
           </div>
         </div>
       </TechStack>
