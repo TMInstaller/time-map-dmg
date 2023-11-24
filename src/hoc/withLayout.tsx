@@ -6,7 +6,7 @@ const withLayout = <P extends object>(WrappedComponent: ComponentType<P>) => {
     return (
       <>
         <Header />
-        <main className='w-screen h-auto flex justify-center'>
+        <main className='w-screen h-auto'>
           <WrappedComponent {...props} />
         </main>
       </>

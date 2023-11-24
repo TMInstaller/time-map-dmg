@@ -14,7 +14,9 @@ const config: Config = {
       },
       colors: {
         'background-light': '#1F1739',
+        'background-box': '#A29FB3',
         'text-normal': '#A29FB3',
+        'text-dark': '#110D1E',
       },
       maxWidth: {
         content: '1200px',
