@@ -5,7 +5,7 @@ export default function Projects() {
     <>
       <Header />
       <div className='w-screen h-auto flex justify-center'>
-        <div className='grid max-w-content w-full'>여기는 Projects Page입니다</div>
+        <div className='grid max-w-content w-full mt-4'>여기는 Projects Page입니다</div>
       </div>
     </>
   )
