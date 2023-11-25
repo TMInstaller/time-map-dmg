@@ -1,11 +1,13 @@
+import ActivityInfo from '@/components/info/ActivityInfo'
 import withLayout from '@/hoc/withLayout'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Activities: React.FC = () => {
   return (
     <div className='flex flex-col items-center'>
-      <div className='max-w-content w-full mt-4'>
-        <div className='border border-white'>여기는 Activities Page입니다</div>
-      </div>
+      <div className='text-5xl font-bold mt-4'>Activities</div>
+      <ActivityInfo />
     </div>
   )
 }
