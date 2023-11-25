@@ -1,7 +1,5 @@
 import ActivityInfo from '@/components/info/ActivityInfo'
 import withLayout from '@/hoc/withLayout'
-import Image from 'next/image'
-import Link from 'next/link'
 
 const Activities: React.FC = () => {
   return (
