@@ -4,13 +4,14 @@ import Link from 'next/link'
 const MainProjectInfo = () => {
   return (
     <div className='grid grid-cols-12 max-w-content w-full h-[30rem] mt-4 bg-background-light p-4 rounded-xl gap-4'>
-      <div className='col-start-1 col-end-7 relative bg-background-light'>
-        <Image
-          src='/RememberPlus.png'
-          alt=''
-          fill
-          style={{ objectFit: 'cover', overflow: 'hidden' }}
-        />
+      <div className='col-start-1 col-end-7 relative bg-background-light flex flex-col justify-center items-center'>
+        <iframe
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/Orf4dlkqGfo?si=7HEAPEdTbJSgwCWQ'
+          title='YouTube video player'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+        ></iframe>
       </div>
       <div
         className={`col-start-7 col-end-13 p-4 bg-background-light flex flex-col justify-center gap-2`}
@@ -37,7 +38,7 @@ const MainProjectInfo = () => {
         </div>
         <div className='flex flex-col gap-4'>
           <div className='text-xl font-bold'>Visit Articles</div>
-          <div className='w-full h-32 bg-background-box rounded-lg grid grid-cols-3 py-2 hover:scale-105'>
+          <div className='w-5/6 h-28 bg-background-boxlight rounded-lg grid grid-cols-3 py-2 hover:scale-105'>
             <div className='relative col-start-1 col-end-2 hover:scale-105'>
               <Link href={`https://github.com/SV-Summer-BootCamp-Team-F`}>
                 <Image src='/github.png' alt='' fill style={{ objectFit: 'contain' }} />

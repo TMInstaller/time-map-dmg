@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         'background-light': '#1F1739',
         'background-box': '#A29FB3',
+        'background-boxlight': '#CECAE3',
         'text-normal': '#A29FB3',
         'text-dark': '#110D1E',
       },
