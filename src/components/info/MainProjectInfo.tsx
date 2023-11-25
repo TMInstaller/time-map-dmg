@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const MainProjectInfo = () => {
   return (
-    <div className='grid grid-cols-12 max-w-content w-full h-[30rem] mt-4 bg-background-light p-4 rounded-xl gap-4'>
+    <div className='grid grid-cols-12 max-w-content w-full h-auto mt-4 bg-background-light p-4 rounded-xl gap-4'>
       <div className='col-start-1 col-end-7 relative bg-background-light flex flex-col justify-center items-center'>
         <iframe
           width='560'
@@ -14,9 +14,9 @@ const MainProjectInfo = () => {
         ></iframe>
       </div>
       <div
-        className={`col-start-7 col-end-13 p-4 bg-background-light flex flex-col justify-center gap-2`}
+        className={`col-start-7 col-end-13 p-4 bg-background-light flex flex-col justify-center`}
       >
-        <div className='flex flex-row gap-2 mb-4'>
+        <div className='flex flex-row gap-4 mb-4'>
           <div className='text-5xl font-bold'>Project</div>
           <div className='text-2xl font-bold'>Remember Plus</div>
         </div>
