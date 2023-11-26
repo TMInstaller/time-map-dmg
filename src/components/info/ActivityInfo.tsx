@@ -9,7 +9,7 @@ type ActivityInfoProps = {
   period: string
   result: string
   moreInfoURL: string
-  imageUrl: string
+  imageURL: string
 }
 
 const ActivityInfo: React.FC<ActivityInfoProps> = ({
@@ -20,12 +20,17 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
   period,
   result,
   moreInfoURL,
-  imageUrl,
+  imageURL,
 }) => {
   return (
     <div className='grid grid-cols-12 max-w-content w-full h-80 mt-4 animate-slide-in bg-background-light p-4 rounded-xl'>
       <div className='col-start-1 col-end-6 relative bg-background-light'>
-        <Image src={imageUrl} alt={title} fill style={{ objectFit: 'contain' }} />
+        <Image
+          src={imageURL}
+          alt={title}
+          fill
+          style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
+        />
       </div>
       <div
         className={`col-start-6 col-end-13 p-4 bg-background-light flex flex-col justify-center gap-2`}
@@ -51,7 +56,7 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
         </div>
         <div className='text-xl font-bold text-red-500 hover:underline'>
           <Link href={moreInfoURL} target='_blank'>
-            More Information(Visit Tistory)
+            More Information
           </Link>
         </div>
       </div>
