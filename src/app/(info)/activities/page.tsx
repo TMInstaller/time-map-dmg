@@ -32,7 +32,7 @@ const Activities: React.FC = () => {
       period: '2023.08',
       result: '요구조건을 받아 Svelte, Go를 활용하여 FE/BE 개발',
       moreInfoURL: 'https://time-map-installer.tistory.com/251',
-      imageURL: '',
+      imageURL: '/GoodNight2nd.png',
     },
     {
       title: '실리콘밸리 테커 SW 부트캠프',
@@ -52,7 +52,7 @@ const Activities: React.FC = () => {
       period: '2023.05',
       result: '현재 위치에서 가까운 관광지를 추천해주는 서비스 (BangBangGo)',
       moreInfoURL: 'https://time-map-installer.tistory.com/243',
-      imageURL: '',
+      imageURL: '/BangBangGo.png',
     },
     {
       title: 'Good Night Hackathon',
@@ -62,7 +62,7 @@ const Activities: React.FC = () => {
       period: '2023.02',
       result: '요구조건을 받아 Spring Boot로 API 개발',
       moreInfoURL: 'https://time-map-installer.tistory.com/175',
-      imageURL: '',
+      imageURL: '/GoodNight.png',
     },
     {
       title: '실리콘밸리 부트캠프',
@@ -82,7 +82,7 @@ const Activities: React.FC = () => {
       period: '2023.02',
       result: '요구조건을 받아 Spring Boot로 API 개발',
       moreInfoURL: 'https://time-map-installer.tistory.com/117',
-      imageURL: '',
+      imageURL: '/nananana.png',
     },
   ]
 
