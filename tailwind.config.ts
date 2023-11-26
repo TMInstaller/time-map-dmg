@@ -27,9 +27,18 @@ const config: Config = {
           '0%': { transform: 'translateX(-100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        orbit: {
+          '0%': {
+            transform: 'rotate(0deg) translateX(50px) rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(360deg) translateX(50px) rotate(-360deg)',
+          },
+        },
       },
       animation: {
         'slide-in': 'slideIn 0.5s ease-out forwards',
+        orbit: 'orbit 10s linear infinite',
       },
     },
   },

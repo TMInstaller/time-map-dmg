@@ -13,10 +13,8 @@ const Projects: React.FC = () => {
           className='col-start-1 col-end-3 border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500'
         >
           <option selected>Categories</option>
-          <option value='US'>United States</option>
-          <option value='CA'>Canada</option>
-          <option value='FR'>France</option>
-          <option value='DE'>Germany</option>
+          <option value='Web'>Web</option>
+          <option value='Mobile'>Mobile</option>
         </select>
         <select
           id='sort'
@@ -24,7 +22,7 @@ const Projects: React.FC = () => {
         >
           <option selected>Sort By</option>
           <option value='recentASC'>Recent ASC</option>
-          <option value='recentDESC'>Recebt DESC</option>
+          <option value='recentDESC'>Recent DESC</option>
           <option value='alphabeticASC'>Alphabetic ASC</option>
           <option value='alphabeticDESC'>Alphabetic DESC</option>
         </select>
@@ -52,7 +50,7 @@ const Projects: React.FC = () => {
               type='search'
               id='default-search'
               className='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-              placeholder='Search Mockups, Logos...'
+              placeholder='Search Projects...'
               required
             />
             <button
