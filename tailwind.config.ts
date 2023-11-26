@@ -20,7 +20,7 @@ const config: Config = {
         'text-dark': '#110D1E',
       },
       maxWidth: {
-        content: '1200px',
+        content: '75rem',
       },
       keyframes: {
         slideIn: {
@@ -29,16 +29,21 @@ const config: Config = {
         },
         orbit: {
           '0%': {
-            transform: 'rotate(0deg) translateX(50px) rotate(0deg)',
+            transform: 'rotate(0deg) translateX(90%) rotate(0deg)',
           },
           '100%': {
-            transform: 'rotate(360deg) translateX(50px) rotate(-360deg)',
+            transform: 'rotate(360deg) translateX(90%) rotate(-360deg)',
           },
         },
       },
       animation: {
         'slide-in': 'slideIn 0.5s ease-out forwards',
-        orbit: 'orbit 10s linear infinite',
+        orbit1: 'orbit 12s linear infinite',
+        orbit2: 'orbit 16s linear infinite',
+        orbit3: 'orbit 20s linear infinite',
+        orbit4: 'orbit 24s linear infinite',
+        orbit5: 'orbit 28s linear infinite',
+        orbit6: 'orbit 32s linear infinite',
       },
     },
   },
