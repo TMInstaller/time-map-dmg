@@ -4,7 +4,7 @@ import Link from 'next/link'
 const MainProjectInfo = () => {
   return (
     <div className='grid grid-cols-12 max-w-content w-full h-auto mt-4 bg-background-light p-4 rounded-xl gap-4'>
-      <div className='col-start-1 col-end-7 relative bg-background-light flex flex-col justify-center items-center'>
+      <div className='col-start-1 col-end-7 relative flex flex-col justify-center items-center'>
         <iframe
           width='560'
           height='315'
@@ -13,26 +13,24 @@ const MainProjectInfo = () => {
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
       </div>
-      <div
-        className={`col-start-7 col-end-13 p-4 bg-background-light flex flex-col justify-center`}
-      >
+      <div className={`col-start-7 col-end-13 p-4 flex flex-col justify-center`}>
         <div className='flex flex-row gap-4 mb-4'>
           <div className='text-5xl font-bold'>Project</div>
           <div className='text-2xl font-bold'>Remember Plus</div>
         </div>
-        <div className='flex flex-row gap-4 hover:border border-white'>
+        <div className='flex flex-row gap-4'>
           <div className='text-xl font-bold'>Info</div>
           <div className='text-xl'>명함 관계 시각화 서비스</div>
         </div>
-        <div className='flex flex-row gap-4 hover:border border-white'>
+        <div className='flex flex-row gap-4'>
           <div className='text-xl font-bold'>Period</div>
           <div className='text-xl'>2023.07 ~ 2023.11</div>
         </div>
-        <div className='flex flex-row gap-4 hover:border border-white'>
+        <div className='flex flex-row gap-4'>
           <div className='text-xl font-bold'>Position</div>
           <div className='text-xl'>Frontend, DevOps</div>
         </div>
-        <div className='flex flex-row gap-4 hover:border border-white'>
+        <div className='flex flex-row gap-4'>
           <div className='text-xl font-bold'>Stacks</div>
           <div className='text-xl'>React.js, TailwindCSS, Three.js, D3.js</div>
         </div>

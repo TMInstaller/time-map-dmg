@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
       <div className='grid grid-cols-3 max-w-content w-full h-72 gap-4'>
         <div className='relative rounded-xl hover:scale-105'>
           <Image
-            src='/RememberPlus.png'
+            src='/auto-overnight.png'
             alt=''
             fill
             style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
         </div>
         <div className='relative rounded-xl hover:scale-105'>
           <Image
-            src='/RememberPlus.png'
+            src='/HQRoutine.png'
             alt=''
             fill
             style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
@@ -90,7 +90,7 @@ const Projects: React.FC = () => {
         </div>
         <div className='relative rounded-xl hover:scale-105'>
           <Image
-            src='/RememberPlus.png'
+            src='/CropDoctor.png'
             alt=''
             fill
             style={{ overflow: 'hidden', borderRadius: '0.75rem' }}

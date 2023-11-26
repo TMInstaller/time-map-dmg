@@ -30,7 +30,7 @@ const ActivityInfo = () => {
           <div className='text-xl'>종합 2위</div>
         </div>
         <div className='text-xl font-bold text-red-500 hover:underline'>
-          <Link href='https://time-map-installer.tistory.com/250'>
+          <Link href='https://time-map-installer.tistory.com/250' target='_blank'>
             More Information(Visit Tistory)
           </Link>
         </div>
