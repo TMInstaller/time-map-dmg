@@ -38,23 +38,28 @@ const MainProjectInfo = () => {
         </div>
         <div className='flex flex-col gap-4'>
           <div className='text-xl font-bold'>Visit Articles</div>
-          <div className='w-5/6 h-28 bg-background-boxlight rounded-lg grid grid-cols-3 py-2 hover:scale-105'>
-            <div className='relative col-start-1 col-end-2 hover:scale-105'>
-              <Link href={`https://github.com/SV-Summer-BootCamp-Team-F`}>
-                <Image src='/github.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </Link>
+          <div className='grid grid-cols-3 gap-4'>
+            <div className='col-start-1 col-end-3 w-full h-24 bg-background-boxlight rounded-lg grid grid-cols-3 py-2 hover:scale-105'>
+              <div className='relative col-start-1 col-end-2 hover:scale-105'>
+                <Link href={`https://github.com/SV-Summer-BootCamp-Team-F`}>
+                  <Image src='/github.png' alt='' fill style={{ objectFit: 'contain' }} />
+                </Link>
+              </div>
+              <div className='relative col-start-2 col-end-3 hover:scale-105'>
+                <Link
+                  href={`https://medium.com/@tminstaller/siliconvalley-winter-bootcamp-remember-plus-korean-803311e5fa9c`}
+                >
+                  <Image src='/medium.png' alt='' fill style={{ objectFit: 'contain' }} />
+                </Link>
+              </div>
+              <div className='relative col-start-3 col-end-4 hover:scale-105'>
+                <Link href={`https://time-map-installer.tistory.com/250`}>
+                  <Image src='/tistory.png' alt='' fill style={{ objectFit: 'contain' }} />
+                </Link>
+              </div>
             </div>
-            <div className='relative col-start-2 col-end-3 hover:scale-105'>
-              <Link
-                href={`https://medium.com/@tminstaller/siliconvalley-winter-bootcamp-remember-plus-korean-803311e5fa9c`}
-              >
-                <Image src='/medium.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </Link>
-            </div>
-            <div className='relative col-start-3 col-end-4 hover:scale-105'>
-              <Link href={`https://time-map-installer.tistory.com/250`}>
-                <Image src='/tistory.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </Link>
+            <div className='border border-white w-full h-24 flex justify-center items-center rounded-lg bg-background-boxlight hover:scale-105'>
+              <div className='text-2xl font-bold text-background-light'>상세보기</div>
             </div>
           </div>
         </div>
