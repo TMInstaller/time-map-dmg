@@ -23,8 +23,8 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
   imageURL,
 }) => {
   return (
-    <div className='grid grid-cols-12 max-w-content w-full h-80 mt-4 animate-slide-in bg-background-light p-4 rounded-xl'>
-      <div className='col-start-1 col-end-6 relative bg-background-light'>
+    <div className='grid w-full grid-cols-12 p-4 mt-4 max-w-content h-80 animate-slide-in bg-background-light rounded-xl'>
+      <div className='relative col-start-1 col-end-6 bg-background-light'>
         <Image
           src={imageURL}
           alt={title}

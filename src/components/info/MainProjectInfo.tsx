@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const MainProjectInfo = () => {
   return (
-    <div className='grid grid-cols-12 max-w-content w-full h-auto mt-4 bg-background-light p-4 rounded-xl gap-4'>
-      <div className='col-start-1 col-end-7 relative flex flex-col justify-center items-center'>
+    <div className='grid w-full h-auto grid-cols-12 gap-4 p-4 mt-4 max-w-content bg-background-light rounded-xl'>
+      <div className='relative flex flex-col items-center justify-center col-start-1 col-end-7'>
         <iframe
           width='560'
           height='315'
@@ -37,7 +37,7 @@ const MainProjectInfo = () => {
         <div className='flex flex-col gap-4'>
           <div className='text-xl font-bold'>Visit Articles</div>
           <div className='grid grid-cols-3 gap-4'>
-            <div className='col-start-1 col-end-3 w-full h-24 bg-background-boxlight rounded-lg grid grid-cols-3 py-2 hover:scale-105'>
+            <div className='grid w-full h-24 grid-cols-3 col-start-1 col-end-3 py-2 rounded-lg bg-background-boxlight hover:scale-105'>
               <div className='relative col-start-1 col-end-2 hover:scale-105'>
                 <Link href={`https://github.com/SV-Summer-BootCamp-Team-F`}>
                   <Image src='/github.png' alt='' fill style={{ objectFit: 'contain' }} />
@@ -57,7 +57,7 @@ const MainProjectInfo = () => {
               </div>
             </div>
             <Link href='/projectDetail'>
-              <div className='border border-white w-full h-24 flex justify-center items-center rounded-lg bg-background-boxlight hover:scale-105'>
+              <div className='flex items-center justify-center w-full h-24 border border-white rounded-lg bg-background-boxlight hover:scale-105'>
                 <div className='text-2xl font-bold text-background-light'>상세보기</div>
               </div>
             </Link>

@@ -18,12 +18,12 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
   profileImage,
 }) => {
   return (
-    <div className='max-w-content w-full mt-4'>
-      <div className='h-96 grid grid-cols-12 gap-12'>
-        <div className='col-start-1 col-end-6 w-full relative border rounded-xl overflow-hidden'>
+    <div className='w-full mt-4 max-w-content'>
+      <div className='grid grid-cols-12 gap-12 h-96'>
+        <div className='relative w-full col-start-1 col-end-6 overflow-hidden border rounded-xl'>
           <Image src={profileImage} alt='' fill style={{ objectFit: 'cover' }} />
         </div>
-        <div className='col-start-6 col-end-13 flex flex-col gap-6 justify-center'>
+        <div className='flex flex-col justify-center col-start-6 col-end-13 gap-6'>
           <div className='flex flex-row gap-2'>
             <div className='text-4xl font-bold'>WHO AM I?</div>
             <div className='text-xl font-bold'>I am Web Frontend Engineer</div>

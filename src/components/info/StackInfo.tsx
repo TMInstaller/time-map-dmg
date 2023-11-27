@@ -9,9 +9,9 @@ type StackInfoProps = {
 const StackInfo: React.FC<StackInfoProps> = ({ category, children }) => {
   return (
     <div className='mt-4 transition ease-in-out hover:scale-105 hover:shadow-xl w-96'>
-      <div className='flex flex-col bg-background-box p-4 rounded-xl w-full'>
-        <div className='flex flex-col justify-center bg-background-box rounded-xl gap-2'>
-          <div className='font-serif font-bold text-4xl text-black'>{category}</div>
+      <div className='flex flex-col w-full p-4 bg-background-box rounded-xl'>
+        <div className='flex flex-col justify-center gap-2 bg-background-box rounded-xl'>
+          <div className='font-serif text-4xl font-bold text-black'>{category}</div>
           {children}
         </div>
       </div>
