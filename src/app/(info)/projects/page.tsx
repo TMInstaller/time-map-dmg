@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
           id='categories'
           className='col-start-1 col-end-3 border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500'
         >
-          <option selected>Categories</option>
+          <option defaultValue=''>Categories</option>
           <option value='Web'>Web</option>
           <option value='Mobile'>Mobile</option>
         </select>
@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
           id='sort'
           className='col-start-3 col-end-5 border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500'
         >
-          <option selected>Sort By</option>
+          <option defaultValue=''>Sort By</option>
           <option value='recentASC'>Recent ASC</option>
           <option value='recentDESC'>Recent DESC</option>
           <option value='alphabeticASC'>Alphabetic ASC</option>
@@ -39,9 +39,9 @@ const Projects: React.FC = () => {
               >
                 <path
                   stroke='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   d='m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z'
                 />
               </svg>
