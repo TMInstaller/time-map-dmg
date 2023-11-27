@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
     <div className='flex flex-col items-center'>
       <MainProjectInfo />
 
-      <div className='grid grid-cols-12 max-w-content w-full h-auto p-4 rounded-xl gap-4'>
+      <div className='grid w-full h-auto grid-cols-12 gap-4 p-4 max-w-content rounded-xl'>
         <select
           id='categories'
           className='col-start-1 col-end-3 border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500'
@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
 
         <form className='col-start-5 col-end-13'>
           <div className='relative '>
-            <div className='absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none'>
+            <div className='absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3'>
               <svg
                 className='w-4 h-4 text-gray-500 dark:text-gray-400'
                 aria-hidden='true'
@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
             <input
               type='search'
               id='default-search'
-              className='block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+              className='block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               placeholder='Search Projects...'
               required
             />
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
         </form>
       </div>
 
-      <div className='grid grid-cols-3 max-w-content w-full h-72 gap-4'>
+      <div className='grid w-full grid-cols-3 gap-4 max-w-content h-72'>
         <div className='relative rounded-xl hover:scale-105'>
           <Image
             src='/auto-overnight.png'
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
             fill
             style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
           />
-          <div className='flex items-center justify-between absolute bottom-0 w-full bg-black opacity-60 h-1/6 px-2'>
+          <div className='absolute bottom-0 flex items-center justify-between w-full px-2 bg-black opacity-60 h-1/6'>
             <div>AUTO-OverNight</div>
             <div>대학 외박신청어플</div>
           </div>
@@ -83,7 +83,7 @@ const Projects: React.FC = () => {
             fill
             style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
           />
-          <div className='flex items-center justify-between absolute bottom-0 w-full bg-black opacity-60 h-1/6 px-2'>
+          <div className='absolute bottom-0 flex items-center justify-between w-full px-2 bg-black opacity-60 h-1/6'>
             <div>HQ Routine</div>
             <div>이벤트 일정 공유 서비스</div>
           </div>
@@ -95,7 +95,7 @@ const Projects: React.FC = () => {
             fill
             style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
           />
-          <div className='flex items-center justify-between absolute bottom-0 w-full bg-black opacity-60 h-1/6 px-2'>
+          <div className='absolute bottom-0 flex items-center justify-between w-full px-2 bg-black opacity-60 h-1/6'>
             <div>Crop Doctor</div>
             <div>작물 병해 진단 플랫폼</div>
           </div>

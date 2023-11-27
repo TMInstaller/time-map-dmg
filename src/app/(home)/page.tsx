@@ -33,7 +33,7 @@ export default function Home() {
           >
             {category}
             {tooltip === `More about ${category}` && (
-              <div className='absolute w-full bg-gray-700 border p-2 mt-2'>{tooltip}</div>
+              <div className='absolute w-full p-2 mt-2 bg-gray-700 border'>{tooltip}</div>
             )}
           </div>
         </Link>
