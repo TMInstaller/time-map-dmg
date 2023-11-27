@@ -29,50 +29,50 @@ const config: Config = {
         },
         orbit1: {
           '0%': {
-            transform: 'rotate(0deg) translateX(90%) rotate(0deg)',
+            transform: 'rotate(0deg) translateX(84%) rotate(0deg)',
           },
           '100%': {
-            transform: 'rotate(360deg) translateX(90%) rotate(-360deg)',
+            transform: 'rotate(360deg) translateX(84%) rotate(-360deg)',
           },
         },
         orbit2: {
           '0%': {
-            transform: 'rotate(60deg) translateX(90%) rotate(-60deg)',
+            transform: 'rotate(60deg) translateX(84%) rotate(-60deg)',
           },
           '100%': {
-            transform: 'rotate(420deg) translateX(90%) rotate(-420deg)',
+            transform: 'rotate(420deg) translateX(84%) rotate(-420deg)',
           },
         },
         orbit3: {
           '0%': {
-            transform: 'rotate(120deg) translateX(90%) rotate(-120deg)',
+            transform: 'rotate(120deg) translateX(84%) rotate(-120deg)',
           },
           '100%': {
-            transform: 'rotate(480deg) translateX(90%) rotate(-480deg)',
+            transform: 'rotate(480deg) translateX(84%) rotate(-480deg)',
           },
         },
         orbit4: {
           '0%': {
-            transform: 'rotate(180deg) translateX(90%) rotate(-180deg)',
+            transform: 'rotate(180deg) translateX(84%) rotate(-180deg)',
           },
           '100%': {
-            transform: 'rotate(540deg) translateX(90%) rotate(-540deg)',
+            transform: 'rotate(540deg) translateX(84%) rotate(-540deg)',
           },
         },
         orbit5: {
           '0%': {
-            transform: 'rotate(240deg) translateX(90%) rotate(-240deg)',
+            transform: 'rotate(240deg) translateX(84%) rotate(-240deg)',
           },
           '100%': {
-            transform: 'rotate(600deg) translateX(90%) rotate(-600deg)',
+            transform: 'rotate(600deg) translateX(84%) rotate(-600deg)',
           },
         },
         orbit6: {
           '0%': {
-            transform: 'rotate(300deg) translateX(90%) rotate(-300deg)',
+            transform: 'rotate(300deg) translateX(84%) rotate(-300deg)',
           },
           '100%': {
-            transform: 'rotate(680deg) translateX(90%) rotate(-680deg)',
+            transform: 'rotate(660deg) translateX(84%) rotate(-660deg)',
           },
         },
       },

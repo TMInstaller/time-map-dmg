@@ -14,7 +14,14 @@ const ContactOrbit: React.FC<Orbit> = ({ href, imgURL, animationClass }) => {
     <div className={`${commonStyle} ${animationClass}`}>
       <div className='relative grid items-center justify-center h-full rounded-xl bg-background-box hover:scale-105'>
         <Link href={href}>
-          <Image src={imgURL} alt='' fill style={{ objectFit: 'contain' }} />
+          <Image
+            src={imgURL}
+            alt=''
+            fill
+            priority={false}
+            sizes='(min-width: 512px) 600px, 100vw'
+            style={{ objectFit: 'contain' }}
+          />
         </Link>
       </div>
     </div>
