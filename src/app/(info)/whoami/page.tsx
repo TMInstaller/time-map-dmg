@@ -1,11 +1,33 @@
+'use client'
 import PersonalInfo from '@/components/info/PersonalInfo'
 import StackInfo from '@/components/info/StackInfo'
 import TechStack from '@/components/info/TechStack'
 import TechStackItem from '@/components/info/TechStackItem'
 import withLayout from '@/hoc/withLayout'
-import Image from 'next/image'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+
+// Adjust the type to be an array of arrays
+type Stack = {
+  category: string
+  items: {
+    imgSrc: string
+    height: number // Changed from string to number
+  }[]
+}[][]
 
 const WhoAmI: React.FC = () => {
+  const [techStackData, setTechStackData] = useState<Stack>([])
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3000/api/v1/info/whoami')
+      .then((response) => {
+        setTechStackData(response.data.stacks)
+      })
+      .catch((error) => console.error('Error:', error))
+  }, [])
+
   return (
     <div className='flex flex-col items-center'>
       <PersonalInfo
@@ -19,37 +41,17 @@ const WhoAmI: React.FC = () => {
 
       <TechStack>
         <div className='flex gap-8'>
-          <div>
-            <StackInfo category='Frameworks'>
-              <TechStackItem imgSrc='/Nextjs.png' height='32' />
-              <TechStackItem imgSrc='/sveltekit.png' height='16' />
-            </StackInfo>
-            <StackInfo category='Libraries'>
-              <TechStackItem imgSrc='/ReactSvelte.png' height='32' />
-              <TechStackItem imgSrc='/D3Highcharts.png' height='28' />
-              <TechStackItem imgSrc='/ThreeJS.png' height='28' />
-            </StackInfo>
-            <StackInfo category='CSS'>
-              <TechStackItem imgSrc='/tailwind.png' height='8' />
-              <TechStackItem imgSrc='/emotion.png' height='24' />
-              <TechStackItem imgSrc='/sass.png' height='32' />
-            </StackInfo>
-          </div>
-          <div>
-            <StackInfo category='Languages'>
-              <TechStackItem imgSrc='/jsts.png' height='32' />
-            </StackInfo>
-            <StackInfo category='Package Manager'>
-              <TechStackItem imgSrc='/yarn.png' height='28' />
-              <TechStackItem imgSrc='/npm.png' height='28' />
-            </StackInfo>
-            <StackInfo category='Communication'>
-              <TechStackItem imgSrc='/slack.png' height='24' />
-              <TechStackItem imgSrc='/Figma.png' height='32' />
-              <TechStackItem imgSrc='/Jira.png' height='24' />
-              <TechStackItem imgSrc='/notion.png' height='24' />
-            </StackInfo>
-          </div>
+          {techStackData.map((column, columnIndex) => (
+            <div key={columnIndex} className='flex flex-col gap-4'>
+              {column.map((stack, stackIndex) => (
+                <StackInfo key={stackIndex} category={stack.category}>
+                  {stack.items.map((item, itemIndex) => (
+                    <TechStackItem key={itemIndex} imgSrc={item.imgSrc} height={item.height} />
+                  ))}
+                </StackInfo>
+              ))}
+            </div>
+          ))}
         </div>
       </TechStack>
     </div>
