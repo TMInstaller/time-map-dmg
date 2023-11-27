@@ -1,6 +1,7 @@
 import PersonalInfo from '@/components/info/PersonalInfo'
 import StackInfo from '@/components/info/StackInfo'
 import TechStack from '@/components/info/TechStack'
+import TechStackItem from '@/components/info/TechStackItem'
 import withLayout from '@/hoc/withLayout'
 import Image from 'next/image'
 
@@ -20,63 +21,33 @@ const WhoAmI: React.FC = () => {
         <div className='flex gap-8'>
           <div>
             <StackInfo category='Frameworks'>
-              <div className='relative h-32'>
-                <Image src='/Nextjs.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-16'>
-                <Image src='/sveltekit.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
+              <TechStackItem imgSrc='/Nextjs.png' height='32' />
+              <TechStackItem imgSrc='/sveltekit.png' height='16' />
             </StackInfo>
             <StackInfo category='Libraries'>
-              <div className='relative h-32'>
-                <Image src='/ReactSvelte.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-28'>
-                <Image src='/D3Highcharts.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-28'>
-                <Image src='/ThreeJS.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
+              <TechStackItem imgSrc='/ReactSvelte.png' height='32' />
+              <TechStackItem imgSrc='/D3Highcharts.png' height='28' />
+              <TechStackItem imgSrc='/ThreeJS.png' height='28' />
             </StackInfo>
             <StackInfo category='CSS'>
-              <div className='relative h-8'>
-                <Image src='/tailwind.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-24'>
-                <Image src='/emotion.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-32'>
-                <Image src='/sass.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
+              <TechStackItem imgSrc='/tailwind.png' height='8' />
+              <TechStackItem imgSrc='/emotion.png' height='24' />
+              <TechStackItem imgSrc='/sass.png' height='32' />
             </StackInfo>
           </div>
           <div>
             <StackInfo category='Languages'>
-              <div className='relative h-32'>
-                <Image src='/jsts.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
+              <TechStackItem imgSrc='/jsts.png' height='32' />
             </StackInfo>
             <StackInfo category='Package Manager'>
-              <div className='relative h-28'>
-                <Image src='/yarn.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-28'>
-                <Image src='/npm.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
+              <TechStackItem imgSrc='/yarn.png' height='28' />
+              <TechStackItem imgSrc='/npm.png' height='28' />
             </StackInfo>
             <StackInfo category='Communication'>
-              <div className='relative h-24'>
-                <Image src='/slack.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-32'>
-                <Image src='/Figma.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-24'>
-                <Image src='/Jira.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className='relative h-24'>
-                <Image src='/notion.png' alt='' fill style={{ objectFit: 'contain' }} />
-              </div>
+              <TechStackItem imgSrc='/slack.png' height='24' />
+              <TechStackItem imgSrc='/Figma.png' height='32' />
+              <TechStackItem imgSrc='/Jira.png' height='24' />
+              <TechStackItem imgSrc='/notion.png' height='24' />
             </StackInfo>
           </div>
         </div>
