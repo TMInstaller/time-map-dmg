@@ -29,6 +29,7 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
           src={imageURL}
           alt={title}
           fill
+          sizes='(min-width: 512px) 600px, 100vw'
           style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
         />
       </div>
