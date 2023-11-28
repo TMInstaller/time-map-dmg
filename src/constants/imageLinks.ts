@@ -1,4 +1,4 @@
-export const LOGO_LINKS = {
+export const LOGO_IMG = {
   nextJS: '/Nextjs.png',
   svelteKit: '/sveltekit.png',
   reactSvelte: '/ReactSvelte.png',
@@ -16,4 +16,13 @@ export const LOGO_LINKS = {
   notion: '/notion.png',
 }
 
-export const CAPTURE_LINKS = {}
+export const CAPTURE_IMG = {
+  techeerPartners: '/TECHEERPartners.png',
+  woowa: '/Woowa.png',
+  goodNight2nd: '/GoodNight2nd.png',
+  summerBootcamp2023: '/2023SummerBootcamp.png',
+  bangBangGo: '/BangBangGo.png',
+  goodNight: '/GoodNight.png',
+  winterBootcamp2022: '/2022WinterBootcamp.png',
+  nananana: '/nananana.png',
+}

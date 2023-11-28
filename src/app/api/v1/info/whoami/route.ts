@@ -1,4 +1,4 @@
-import { LOGO_LINKS } from '@/constants/imageLinks'
+import { LOGO_IMG } from '@/constants/imageLinks'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
@@ -8,46 +8,46 @@ export async function GET() {
       {
         category: 'Frameworks',
         items: [
-          { imgSrc: LOGO_LINKS.nextJS, height: 32 },
-          { imgSrc: LOGO_LINKS.svelteKit, height: 16 },
+          { imgSrc: LOGO_IMG.nextJS, height: 32 },
+          { imgSrc: LOGO_IMG.svelteKit, height: 16 },
         ],
       },
       {
         category: 'Libraries',
         items: [
-          { imgSrc: LOGO_LINKS.reactSvelte, height: 32 },
-          { imgSrc: LOGO_LINKS.d3Highcharts, height: 28 },
-          { imgSrc: LOGO_LINKS.threeJS, height: 28 },
+          { imgSrc: LOGO_IMG.reactSvelte, height: 32 },
+          { imgSrc: LOGO_IMG.d3Highcharts, height: 28 },
+          { imgSrc: LOGO_IMG.threeJS, height: 28 },
         ],
       },
       {
         category: 'CSS',
         items: [
-          { imgSrc: LOGO_LINKS.tailwind, height: 8 },
-          { imgSrc: LOGO_LINKS.emotion, height: 24 },
-          { imgSrc: LOGO_LINKS.sass, height: 32 },
+          { imgSrc: LOGO_IMG.tailwind, height: 8 },
+          { imgSrc: LOGO_IMG.emotion, height: 24 },
+          { imgSrc: LOGO_IMG.sass, height: 32 },
         ],
       },
     ],
     [
       {
         category: 'Languages',
-        items: [{ imgSrc: LOGO_LINKS.jsTs, height: 32 }],
+        items: [{ imgSrc: LOGO_IMG.jsTs, height: 32 }],
       },
       {
         category: 'Package Manager',
         items: [
-          { imgSrc: LOGO_LINKS.yarn, height: 28 },
-          { imgSrc: LOGO_LINKS.npm, height: 28 },
+          { imgSrc: LOGO_IMG.yarn, height: 28 },
+          { imgSrc: LOGO_IMG.npm, height: 28 },
         ],
       },
       {
         category: 'Communication',
         items: [
-          { imgSrc: LOGO_LINKS.slack, height: 24 },
-          { imgSrc: LOGO_LINKS.figma, height: 32 },
-          { imgSrc: LOGO_LINKS.jira, height: 24 },
-          { imgSrc: LOGO_LINKS.notion, height: 24 },
+          { imgSrc: LOGO_IMG.slack, height: 24 },
+          { imgSrc: LOGO_IMG.figma, height: 32 },
+          { imgSrc: LOGO_IMG.jira, height: 24 },
+          { imgSrc: LOGO_IMG.notion, height: 24 },
         ],
       },
     ],
