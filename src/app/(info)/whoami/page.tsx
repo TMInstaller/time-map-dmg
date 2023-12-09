@@ -30,7 +30,7 @@ const WhoAmI: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center text-white'>
       <PersonalInfo
         name='백동열'
         email='dongyeol.json@gmail.com'

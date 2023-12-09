@@ -15,9 +15,9 @@ export default function Home() {
 
   const container: string = 'grid grid-cols-2 gap-4 w-screen h-screen p-10 text-center'
   const serviceName: string =
-    'col-span-2 text-6xl font-bold flex justify-center items-center hover:animate-pulse'
+    'col-span-2 text-6xl font-bold flex justify-center items-center hover:animate-pulse text-white'
   const categoryClass: string =
-    'p-6 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out relative font-bold text-3xl'
+    'p-6 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out relative font-bold text-3xl text-white'
 
   const categories: string[] = ['Who am I', 'Projects', 'Activities', 'Contact']
 
@@ -33,7 +33,9 @@ export default function Home() {
           >
             {category}
             {tooltip === `More about ${category}` && (
-              <div className='absolute w-full p-2 mt-2 bg-gray-700 border'>{tooltip}</div>
+              <div className='absolute w-full p-2 mt-2 bg-gray-700 border text-white'>
+                {tooltip}
+              </div>
             )}
           </div>
         </Link>

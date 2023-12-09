@@ -30,7 +30,7 @@ const Activities: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center text-white'>
       <div className='mt-4 text-5xl font-bold'>Activities</div>
       {activities.map((activity, index) => (
         <ActivityInfo
