@@ -56,11 +56,9 @@ const MainProjectInfo = () => {
                 </Link>
               </div>
             </div>
-            <Link href='/projectDetail'>
-              <div className='flex items-center justify-center w-full h-24 border border-white rounded-lg bg-background-boxlight hover:scale-105'>
-                <div className='text-2xl font-bold text-background-light'>상세보기</div>
-              </div>
-            </Link>
+            <div className='flex items-center justify-center w-full h-24 border border-white rounded-lg bg-background-boxlight hover:scale-105'>
+              <div className='text-2xl font-bold text-background-light'>상세보기</div>
+            </div>
           </div>
         </div>
       </div>
