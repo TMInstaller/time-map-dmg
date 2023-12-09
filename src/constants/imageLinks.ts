@@ -38,7 +38,7 @@ export const INFO_IMG = {
 }
 
 export const ACTICITY_IMG = {
-  techeerPartners: '/TECHEERPartners.png',
+  techeerPartners: '/TecheerPartners.png',
   woowa: '/Woowa.png',
   goodNight2nd: '/GoodNight2nd.png',
   summerBootcamp2023: '/2023SummerBootcamp.png',
