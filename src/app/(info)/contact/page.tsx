@@ -1,5 +1,6 @@
 'use client'
 import ContactOrbit from '@/components/info/ContactOrbit'
+import { API_URL } from '@/constants/urls'
 import withLayout from '@/hoc/withLayout'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
@@ -15,7 +16,7 @@ const Contact: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/v1/info/contact')
+      .get(`${API_URL}info/contact`)
       .then((response) => {
         const data = response.data.orbits
         setOrbits(data)

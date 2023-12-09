@@ -1,5 +1,6 @@
 'use client'
 import ActivityInfo from '@/components/info/ActivityInfo'
+import { API_URL } from '@/constants/urls'
 import withLayout from '@/hoc/withLayout'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
@@ -20,7 +21,7 @@ const Activities: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/v1/info/activities')
+      .get(`${API_URL}info/activities`)
       .then((response) => {
         const data = response.data.activities
         setActivities(data)
