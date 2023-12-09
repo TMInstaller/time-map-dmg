@@ -13,7 +13,6 @@ type Stack = {
   category: string
   items: {
     imgSrc: string
-    height: number // Changed from string to number
   }[]
 }[][]
 
@@ -47,7 +46,7 @@ const WhoAmI: React.FC = () => {
               {column.map((stack, stackIndex) => (
                 <StackInfo key={stackIndex} category={stack.category}>
                   {stack.items.map((item, itemIndex) => (
-                    <TechStackItem key={itemIndex} imgSrc={item.imgSrc} height={item.height} />
+                    <TechStackItem key={itemIndex} imgSrc={item.imgSrc} />
                   ))}
                 </StackInfo>
               ))}

@@ -7,52 +7,43 @@ export async function GET() {
     [
       {
         category: 'Frameworks',
-        items: [
-          { imgSrc: LOGO_IMG.framework.nextJS, height: 32 },
-          { imgSrc: LOGO_IMG.framework.svelteKit, height: 32 },
-        ],
+        items: [{ imgSrc: LOGO_IMG.framework.nextJS }, { imgSrc: LOGO_IMG.framework.svelteKit }],
       },
       {
         category: 'Libraries',
         items: [
-          { imgSrc: LOGO_IMG.library.react, height: 32 },
-          { imgSrc: LOGO_IMG.library.svelte, height: 32 },
-          { imgSrc: LOGO_IMG.library.d3, height: 32 },
-          { imgSrc: LOGO_IMG.library.highcharts, height: 32 },
-          { imgSrc: LOGO_IMG.library.threeJS, height: 32 },
+          { imgSrc: LOGO_IMG.library.react },
+          { imgSrc: LOGO_IMG.library.svelte },
+          { imgSrc: LOGO_IMG.library.d3 },
+          { imgSrc: LOGO_IMG.library.highcharts },
+          { imgSrc: LOGO_IMG.library.threeJS },
         ],
       },
       {
         category: 'CSS',
         items: [
-          { imgSrc: LOGO_IMG.css.tailwind, height: 32 },
-          { imgSrc: LOGO_IMG.css.emotion, height: 32 },
-          { imgSrc: LOGO_IMG.css.sass, height: 32 },
+          { imgSrc: LOGO_IMG.css.tailwind },
+          { imgSrc: LOGO_IMG.css.emotion },
+          { imgSrc: LOGO_IMG.css.sass },
         ],
       },
     ],
     [
       {
         category: 'Languages',
-        items: [
-          { imgSrc: LOGO_IMG.language.javaScript, height: 32 },
-          { imgSrc: LOGO_IMG.language.typeScript, height: 32 },
-        ],
+        items: [{ imgSrc: LOGO_IMG.language.javaScript }, { imgSrc: LOGO_IMG.language.typeScript }],
       },
       {
         category: 'Package Manager',
-        items: [
-          { imgSrc: LOGO_IMG.packageManager.yarn, height: 32 },
-          { imgSrc: LOGO_IMG.packageManager.npm, height: 32 },
-        ],
+        items: [{ imgSrc: LOGO_IMG.packageManager.yarn }, { imgSrc: LOGO_IMG.packageManager.npm }],
       },
       {
         category: 'Communication',
         items: [
-          { imgSrc: LOGO_IMG.communication.slack, height: 32 },
-          { imgSrc: LOGO_IMG.communication.figma, height: 32 },
-          { imgSrc: LOGO_IMG.communication.jira, height: 32 },
-          { imgSrc: LOGO_IMG.communication.notion, height: 32 },
+          { imgSrc: LOGO_IMG.communication.slack },
+          { imgSrc: LOGO_IMG.communication.figma },
+          { imgSrc: LOGO_IMG.communication.jira },
+          { imgSrc: LOGO_IMG.communication.notion },
         ],
       },
     ],
