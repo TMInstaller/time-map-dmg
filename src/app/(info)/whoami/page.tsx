@@ -3,6 +3,7 @@ import PersonalInfo from '@/components/info/PersonalInfo'
 import StackInfo from '@/components/info/StackInfo'
 import TechStack from '@/components/info/TechStack'
 import TechStackItem from '@/components/info/TechStackItem'
+import { API_URL } from '@/constants/urls'
 import withLayout from '@/hoc/withLayout'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
@@ -21,7 +22,7 @@ const WhoAmI: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/v1/info/whoami')
+      .get(`${API_URL}info/whoami`)
       .then((response) => {
         setTechStackData(response.data.stacks)
       })
