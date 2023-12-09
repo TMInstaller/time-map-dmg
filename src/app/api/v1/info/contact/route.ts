@@ -1,3 +1,4 @@
+import { INFO_IMG } from '@/constants/imageLinks'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
@@ -5,37 +6,37 @@ export async function GET() {
   const res = [
     {
       href: 'https://time-map-installer.tistory.com/',
-      imgURL: '/Tistory.png',
+      imgURL: INFO_IMG.tistory,
       animationClass: '',
     },
     {
       href: 'https://github.com/TMInstaller',
-      imgURL: '/github.png',
+      imgURL: INFO_IMG.github,
       animationClass: 'animate-orbit1',
     },
     {
       href: 'https://medium.com/@tminstaller',
-      imgURL: '/Medium.png',
+      imgURL: INFO_IMG.medium,
       animationClass: 'animate-orbit2',
     },
     {
       href: 'https://disquiet.io/@tminstaller',
-      imgURL: '/Disquiet.png',
+      imgURL: INFO_IMG.disquiet,
       animationClass: 'animate-orbit3',
     },
     {
       href: 'https://open.kakao.com/o/seUHkOpf',
-      imgURL: '/Kakao.png',
+      imgURL: INFO_IMG.kakao,
       animationClass: 'animate-orbit4',
     },
     {
       href: '/whoami',
-      imgURL: '/Mail.png',
+      imgURL: INFO_IMG.mail,
       animationClass: 'animate-orbit5',
     },
     {
       href: 'https://www.linkedin.com/in/timemap',
-      imgURL: '/linkedIn.png',
+      imgURL: INFO_IMG.linkedIn,
       animationClass: 'animate-orbit6',
     },
   ]

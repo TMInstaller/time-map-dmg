@@ -26,3 +26,24 @@ export const CAPTURE_IMG = {
   winterBootcamp2022: '/2022WinterBootcamp.png',
   nananana: '/nananana.png',
 }
+
+export const INFO_IMG = {
+  tistory: '/tistory.png',
+  github: '/github.png',
+  medium: '/Medium.png',
+  disquiet: '/Disquiet.png',
+  kakao: '/Kakao.png',
+  mail: '/Mail.png',
+  linkedIn: '/linkedIn.png',
+}
+
+export const ACTICITY_IMG = {
+  techeerPartners: '/TECHEERPartners.png',
+  woowa: '/Woowa.png',
+  goodNight2nd: '/GoodNight2nd.png',
+  summerBootcamp2023: '/2023SummerBootcamp.png',
+  bangBangGo: '/BangBangGo.png',
+  goodNight: '/GoodNight.png',
+  winterBootcamp2022: '/2022WinterBootcamp.png',
+  nananana: '/nananana.png',
+}

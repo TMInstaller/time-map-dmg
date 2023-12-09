@@ -1,3 +1,4 @@
+import { ACTICITY_IMG } from '@/constants/imageLinks'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
@@ -12,7 +13,7 @@ export async function GET() {
       result: '멘토링 수행',
       moreInfoURL:
         'https://www.tukorea.ac.kr/tukorea/1099/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGdHVrb3JlYSUyRjM3NiUyRjQ0NjQyJTJGYXJ0Y2xWaWV3LmRvJTNG',
-      imageURL: '/TECHEERPartners.png',
+      imageURL: ACTICITY_IMG.techeerPartners,
     },
     {
       title: '우아한테크코스 2024 프리코스',
@@ -22,7 +23,7 @@ export async function GET() {
       period: '2023.10 ~ 2021.11',
       result: '심사중...',
       moreInfoURL: 'https://time-map-installer.tistory.com/263',
-      imageURL: '/Woowa.png',
+      imageURL: ACTICITY_IMG.woowa,
     },
     {
       title: 'Good Night Hackathon',
@@ -32,7 +33,7 @@ export async function GET() {
       period: '2023.08',
       result: '요구조건을 받아 Svelte, Go를 활용하여 FE/BE 개발',
       moreInfoURL: 'https://time-map-installer.tistory.com/251',
-      imageURL: '/GoodNight2nd.png',
+      imageURL: ACTICITY_IMG.goodNight2nd,
     },
     {
       title: '실리콘밸리 테커 SW 부트캠프',
@@ -42,7 +43,7 @@ export async function GET() {
       period: '2023.06 ~ 2021.08',
       result: '종합 2위 (Project: Remember Plus)',
       moreInfoURL: 'https://time-map-installer.tistory.com/250',
-      imageURL: '/2023SummerBootcamp.png',
+      imageURL: ACTICITY_IMG.summerBootcamp2023,
     },
     {
       title: '실리콘밸리 해커톤',
@@ -52,7 +53,7 @@ export async function GET() {
       period: '2023.05',
       result: '현재 위치에서 가까운 관광지를 추천해주는 서비스 (BangBangGo)',
       moreInfoURL: 'https://time-map-installer.tistory.com/243',
-      imageURL: '/BangBangGo.png',
+      imageURL: ACTICITY_IMG.bangBangGo,
     },
     {
       title: 'Good Night Hackathon',
@@ -62,7 +63,7 @@ export async function GET() {
       period: '2023.02',
       result: '요구조건을 받아 Spring Boot로 API 개발',
       moreInfoURL: 'https://time-map-installer.tistory.com/175',
-      imageURL: '/GoodNight.png',
+      imageURL: ACTICITY_IMG.goodNight,
     },
     {
       title: '실리콘밸리 부트캠프',
@@ -72,7 +73,7 @@ export async function GET() {
       period: '2022.12 ~ 2023.02',
       result: '종합 2위 (Project: Crop Doctor)',
       moreInfoURL: 'https://time-map-installer.tistory.com/162',
-      imageURL: '/2022WinterBootcamp.png',
+      imageURL: ACTICITY_IMG.winterBootcamp2022,
     },
     {
       title: 'MSW X Super Hackathon',
@@ -82,7 +83,7 @@ export async function GET() {
       period: '2023.02',
       result: '요구조건을 받아 Spring Boot로 API 개발',
       moreInfoURL: 'https://time-map-installer.tistory.com/117',
-      imageURL: '/nananana.png',
+      imageURL: ACTICITY_IMG.nananana,
     },
   ]
 
