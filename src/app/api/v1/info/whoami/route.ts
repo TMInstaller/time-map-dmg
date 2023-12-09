@@ -7,47 +7,43 @@ export async function GET() {
     [
       {
         category: 'Frameworks',
-        items: [
-          { imgSrc: LOGO_IMG.nextJS, height: 32 },
-          { imgSrc: LOGO_IMG.svelteKit, height: 16 },
-        ],
+        items: [{ imgSrc: LOGO_IMG.framework.nextJS }, { imgSrc: LOGO_IMG.framework.svelteKit }],
       },
       {
         category: 'Libraries',
         items: [
-          { imgSrc: LOGO_IMG.reactSvelte, height: 32 },
-          { imgSrc: LOGO_IMG.d3Highcharts, height: 28 },
-          { imgSrc: LOGO_IMG.threeJS, height: 28 },
+          { imgSrc: LOGO_IMG.library.react },
+          { imgSrc: LOGO_IMG.library.svelte },
+          { imgSrc: LOGO_IMG.library.d3 },
+          { imgSrc: LOGO_IMG.library.highcharts },
+          { imgSrc: LOGO_IMG.library.threeJS },
         ],
       },
       {
         category: 'CSS',
         items: [
-          { imgSrc: LOGO_IMG.tailwind, height: 8 },
-          { imgSrc: LOGO_IMG.emotion, height: 24 },
-          { imgSrc: LOGO_IMG.sass, height: 32 },
+          { imgSrc: LOGO_IMG.css.tailwind },
+          { imgSrc: LOGO_IMG.css.emotion },
+          { imgSrc: LOGO_IMG.css.sass },
         ],
       },
     ],
     [
       {
         category: 'Languages',
-        items: [{ imgSrc: LOGO_IMG.jsTs, height: 32 }],
+        items: [{ imgSrc: LOGO_IMG.language.javaScript }, { imgSrc: LOGO_IMG.language.typeScript }],
       },
       {
         category: 'Package Manager',
-        items: [
-          { imgSrc: LOGO_IMG.yarn, height: 28 },
-          { imgSrc: LOGO_IMG.npm, height: 28 },
-        ],
+        items: [{ imgSrc: LOGO_IMG.packageManager.yarn }, { imgSrc: LOGO_IMG.packageManager.npm }],
       },
       {
         category: 'Communication',
         items: [
-          { imgSrc: LOGO_IMG.slack, height: 24 },
-          { imgSrc: LOGO_IMG.figma, height: 32 },
-          { imgSrc: LOGO_IMG.jira, height: 24 },
-          { imgSrc: LOGO_IMG.notion, height: 24 },
+          { imgSrc: LOGO_IMG.communication.slack },
+          { imgSrc: LOGO_IMG.communication.figma },
+          { imgSrc: LOGO_IMG.communication.jira },
+          { imgSrc: LOGO_IMG.communication.notion },
         ],
       },
     ],
