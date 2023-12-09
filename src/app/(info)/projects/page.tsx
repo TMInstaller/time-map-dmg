@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Projects: React.FC = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center text-white'>
       <MainProjectInfo />
 
       <div className='grid w-full h-auto grid-cols-12 gap-4 p-4 max-w-content rounded-xl'>
