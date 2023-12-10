@@ -2,18 +2,11 @@ import './HomeBackground.style.css'
 
 const HomeBackground = () => {
   return (
-    <div className='container'>
+    <div className='w-screen h-screen fixed z-0'>
       <ul className='circles'>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        {[...Array(10)].map((_, i) => (
+          <li key={i}></li>
+        ))}
       </ul>
     </div>
   )
