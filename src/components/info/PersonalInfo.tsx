@@ -4,7 +4,6 @@ type PersonalInfoProps = {
   name: string
   email: string
   birth: string
-  phone: string
   location: string
   profileImage: string
 }
@@ -13,7 +12,6 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
   name,
   email,
   birth,
-  phone,
   location,
   profileImage,
 }) => {
@@ -39,10 +37,6 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
           <div className='flex flex-row gap-4'>
             <div className='text-xl font-bold'>Birth</div>
             <div className='text-xl'>{birth}</div>
-          </div>
-          <div className='flex flex-row gap-4'>
-            <div className='text-xl font-bold'>Phone</div>
-            <div className='text-xl'>{phone}</div>
           </div>
           <div className='flex flex-row gap-4'>
             <div className='text-xl font-bold'>Location</div>
