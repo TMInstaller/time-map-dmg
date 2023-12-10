@@ -1,0 +1,184 @@
+.circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+li:hover {
+  background-color: #ededed;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+/* 기존 .circles 및 .circles li 스타일 유지 */
+
+.circles li.animateClick:before,
+.circles li.animateClick:after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.circles li.animateClick:before {
+  animation: topBubbles ease-in-out 0.75s forwards;
+  background-image: radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #ededed 20%, transparent 30%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ededed 15%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  top: -75%;
+  left: -20%;
+}
+
+.circles li.animateClick:after {
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+  background-image: radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ededed 15%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%),
+    radial-gradient(circle, #ededed 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  bottom: -75%;
+  left: -20%;
+}
+
+/* topBubbles 키 프레임 정의 */
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%,
+      70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%,
+      90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%,
+      90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+/* bottomBubbles 키 프레임 정의 */
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
