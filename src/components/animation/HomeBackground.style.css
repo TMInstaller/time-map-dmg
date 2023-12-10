@@ -14,7 +14,7 @@
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
 li:hover {
