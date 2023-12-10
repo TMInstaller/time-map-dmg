@@ -15,10 +15,10 @@ export default function Home() {
     mobile: 'col-span-1 text-4xl',
   }
   const categoryName = {
-    common: 'relative shadow-md font-bold text-text-normal',
+    common: 'relative shadow-md font-bold',
     hover: 'hover:shadow-lg hover:text-white hover:bg-black hover:bg-opacity-40 hover:rounded-xl',
-    web: 'md:p-8 md:text-3xl md:bg-transparent',
-    mobile: 'p-4 text-xl bg-black bg-opacity-30 rounded-xl',
+    web: 'md:p-8 md:text-3xl md:bg-transparent md:text-text-normal',
+    mobile: 'p-4 text-xl bg-black bg-opacity-30 rounded-xl text-white',
   }
   const categories: string[] = ['Who am I', 'Projects', 'Activities', 'Contact']
 

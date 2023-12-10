@@ -34,8 +34,7 @@ const WhoAmI: React.FC = () => {
         name='백동열'
         email='dongyeol.json@gmail.com'
         birth='2000.03.17'
-        phone='010-8713-6926'
-        location='Ansan, Gyeonggi'
+        location='South Korea, Asia, Earth'
         profileImage='/profile_image.jpg'
       />
 
