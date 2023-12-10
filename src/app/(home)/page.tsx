@@ -1,4 +1,5 @@
 'use client'
+import HomeBackground from '@/components/animation/HomeBackground'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -23,6 +24,7 @@ export default function Home() {
 
   return (
     <div className={container}>
+      <HomeBackground />
       <h1 className={serviceName}>TimeMap.dmg</h1>
       {categories.map((category, index) => (
         <Link key={index} href={`/${category.replace(/\s+/g, '').toLowerCase()}`} passHref>
