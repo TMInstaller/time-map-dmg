@@ -24,9 +24,18 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
   imageURL,
 }) => {
   const router = useRouter()
+
+  const container = {
+    common:
+      'grid w-[92%] grid-cols-12 p-4 mt-4 max-w-content animate-slide-in bg-background-light rounded-xl',
+    hover: 'hover:animate-pulse hover:cursoe-pointer',
+    web: 'md:h-80',
+    mobile: 'h-24',
+  }
+
   return (
     <div
-      className='grid w-full grid-cols-12 p-4 mt-4 max-w-content h-80 animate-slide-in bg-background-light rounded-xl hover:animate-pulse hover:cursor-pointer'
+      className={`${container.common} ${container.hover} ${container.web} ${container.mobile}`}
       onClick={() => router.push(moreInfoURL)}
     >
       <div className='relative col-start-1 col-end-6 bg-background-light'>
@@ -34,7 +43,7 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
           src={imageURL}
           alt={title}
           fill
-          sizes='(min-width: 512px) 600px, 100vw'
+          sizes='(min-width: 512px) 600px, 600px'
           style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
         />
       </div>
@@ -42,25 +51,25 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
         className={`col-start-6 col-end-13 p-4 bg-background-light flex flex-col justify-center gap-2`}
       >
         <div className='flex flex-row gap-2'>
-          <div className='text-4xl font-bold'>{title}</div>
-          <div className='text-xl font-bold'>{activityType}</div>
+          <div className='text-2xl font-bold md:text-4xl'>{title}</div>
+          <div className='text-sm font-bold md:text-xl'>{activityType}</div>
         </div>
         <div className='flex flex-row gap-4'>
-          <div className='text-xl'>{description}</div>
+          <div className='text-sm md:text-xl'>{description}</div>
         </div>
         <div className='flex flex-row gap-4'>
-          <div className='text-xl font-bold'>Where</div>
-          <div className='text-xl'>{where}</div>
+          <div className='text-sm font-bold md:text-xl'>Where</div>
+          <div className='text-sm md:text-xl'>{where}</div>
         </div>
         <div className='flex flex-row gap-4'>
-          <div className='text-xl font-bold'>Period</div>
-          <div className='text-xl'>{period}</div>
+          <div className='text-sm font-bold md:text-xl'>Period</div>
+          <div className='text-sm md:text-xl'>{period}</div>
         </div>
         <div className='flex flex-row gap-4'>
-          <div className='text-xl font-bold'>Result</div>
-          <div className='text-xl'>{result}</div>
+          <div className='text-sm font-bold md:text-xl'>Result</div>
+          <div className='text-sm md:text-xl'>{result}</div>
         </div>
-        <div className='text-xl font-bold text-red-500 hover:underline'>
+        <div className='text-sm font-bold text-red-500 md:text-xl hover:underline'>
           <Link href={moreInfoURL} target='_blank'>
             More Information
           </Link>
