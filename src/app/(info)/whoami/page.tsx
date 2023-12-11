@@ -29,7 +29,7 @@ const WhoAmI: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex flex-col items-center text-white'>
+    <div className='flex flex-col items-center px-2 text-white'>
       <PersonalInfo
         name='백동열'
         email='dongyeol.json@gmail.com'
@@ -39,9 +39,9 @@ const WhoAmI: React.FC = () => {
       />
 
       <TechStack>
-        <div className='flex gap-8'>
+        <div className='flex flex-col gap-2 md:gap-8 md:flex-row'>
           {techStackData.map((column, columnIndex) => (
-            <div key={columnIndex} className='flex flex-col gap-4'>
+            <div key={columnIndex} className='flex flex-col gap-2 md:gap-4'>
               {column.map((stack, stackIndex) => (
                 <StackInfo key={stackIndex} category={stack.category}>
                   {stack.items.map((item, itemIndex) => (

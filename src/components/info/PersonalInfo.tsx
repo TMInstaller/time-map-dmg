@@ -17,28 +17,30 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({
 }) => {
   return (
     <div className='w-full mt-4 max-w-content'>
-      <div className='grid grid-cols-12 gap-12 h-96'>
+      <div className='grid h-auto grid-cols-12 gap-4 md:gap-12 md:h-96'>
         <div className='relative w-full col-start-1 col-end-6 overflow-hidden border rounded-xl'>
           <Image src={profileImage} alt='' fill style={{ objectFit: 'cover' }} />
         </div>
-        <div className='flex flex-col justify-center col-start-6 col-end-13 gap-6'>
-          <div className='flex flex-row gap-2'>
-            <div className='text-4xl font-bold'>WHO AM I?</div>
-            <div className='text-xl font-bold'>I am Web Frontend Engineer</div>
+        <div className='flex flex-col justify-center col-start-6 col-end-13 md:gap-6'>
+          <div className='flex flex-col md:gap-2 md:flex-row'>
+            <div className='text-lg font-bold md:text-4xl'>WHO AM I?</div>
+            <div className='text-sm font-bold md:text-xl text-text-normal'>
+              I am Web Frontend Engineer
+            </div>
           </div>
-          <div className='flex flex-row gap-4'>
-            <div className='text-xl font-bold'>Name</div>
-            <div className='text-xl'>{name}</div>
+          <div className='flex flex-col md:gap-4 md:flex-row'>
+            <div className='text-lg font-bold md:text-xl'>Name</div>
+            <div className='text-sm md:text-xl text-text-normal'>{name}</div>
           </div>
-          <div className='flex flex-row gap-4'>
-            <div className='text-xl font-bold'>E-Mail</div>
-            <div className='text-xl'>{email}</div>
+          <div className='flex flex-col md:gap-4 md:flex-row'>
+            <div className='text-lg font-bold md:text-xl'>E-Mail</div>
+            <div className='text-sm md:text-xl text-text-normal'>{email}</div>
           </div>
-          <div className='flex flex-row gap-4'>
+          <div className='flex-row hidden gap-4 md:flex'>
             <div className='text-xl font-bold'>Birth</div>
             <div className='text-xl'>{birth}</div>
           </div>
-          <div className='flex flex-row gap-4'>
+          <div className='flex-row hidden gap-4 md:flex'>
             <div className='text-xl font-bold'>Location</div>
             <div className='text-xl'>{location}</div>
           </div>

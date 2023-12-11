@@ -5,12 +5,12 @@ type TechStackItemProps = {
 }
 
 const TechStackItem: React.FC<TechStackItemProps> = ({ imgSrc }) => (
-  <div className={`relative h-28`}>
+  <div className={`relative h-16 md:h-28`}>
     <Image
       src={imgSrc}
       alt=''
       fill
-      sizes='(min-width: 512px) 600px, 100vw'
+      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
       style={{ objectFit: 'contain' }}
       blurDataURL='path/to/placeholder.jpg'
     />
