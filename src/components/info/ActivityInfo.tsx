@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 type ActivityInfoProps = {
   title: string
@@ -22,8 +23,12 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
   moreInfoURL,
   imageURL,
 }) => {
+  const router = useRouter()
   return (
-    <div className='grid w-full grid-cols-12 p-4 mt-4 max-w-content h-80 animate-slide-in bg-background-light rounded-xl'>
+    <div
+      className='grid w-full grid-cols-12 p-4 mt-4 max-w-content h-80 animate-slide-in bg-background-light rounded-xl hover:animate-pulse hover:cursor-pointer'
+      onClick={() => router.push(moreInfoURL)}
+    >
       <div className='relative col-start-1 col-end-6 bg-background-light'>
         <Image
           src={imageURL}
