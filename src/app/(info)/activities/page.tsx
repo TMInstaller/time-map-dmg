@@ -30,21 +30,21 @@ const Activities: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex flex-col justify-center items-center text-white'>
-      <div className='mt-4 text-5xl font-bold'>Activities</div>
-      {activities.map((activity, index) => (
-        <ActivityInfo
-          key={index}
-          title={activity.title}
-          activityType={activity.activityType}
-          description={activity.description}
-          where={activity.where}
-          period={activity.period}
-          result={activity.result}
-          moreInfoURL={activity.moreInfoURL}
-          imageURL={activity.imageURL}
-        />
-      ))}
+    <div className='flex flex-col items-center justify-center'>
+      <div className='mt-4 text-3xl font-bold text-white md:text-5xl'>Activities</div>
+        {activities.map((activity, index) => (
+          <ActivityInfo
+            key={index}
+            title={activity.title}
+            activityType={activity.activityType}
+            description={activity.description}
+            where={activity.where}
+            period={activity.period}
+            result={activity.result}
+            moreInfoURL={activity.moreInfoURL}
+            imageURL={activity.imageURL}
+          />
+        ))}
     </div>
   )
 }
