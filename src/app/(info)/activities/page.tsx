@@ -30,8 +30,8 @@ const Activities: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex flex-col justify-center items-center text-white'>
-      <div className='mt-4 text-5xl font-bold'>Activities</div>
+    <div className='flex flex-col items-center justify-center text-white'>
+      <div className='mt-4 text-3xl font-bold md:text-5xl'>Activities</div>
       {activities.map((activity, index) => (
         <ActivityInfo
           key={index}
