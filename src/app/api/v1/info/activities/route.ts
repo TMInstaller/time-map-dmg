@@ -80,7 +80,7 @@ export async function GET() {
       activityType: 'Participant',
       description: 'Maple Story World 엔진을 활용한 게임 개발 해커톤',
       where: 'TECHIT',
-      period: '2023.02',
+      period: '2022.09 ~ 2023.11',
       result: '',
       moreInfoURL: 'https://time-map-installer.tistory.com/117',
       imageURL: ACTICITY_IMG.nananana,
