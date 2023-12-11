@@ -39,7 +39,7 @@ const WhoAmI: React.FC = () => {
       />
 
       <TechStack>
-        <div className='flex gap-8'>
+        <div className='flex flex-col gap-8 md:flex-row'>
           {techStackData.map((column, columnIndex) => (
             <div key={columnIndex} className='flex flex-col gap-4'>
               {column.map((stack, stackIndex) => (
