@@ -47,7 +47,7 @@ const ActivityInfo: React.FC<ActivityInfoProps> = ({
         />
       </div>
       <div
-        className={`col-start-6 col-end-13 p-4 bg-background-light flex flex-col justify-center gap-2`}
+        className={`col-start-6 col-end-13 p-4 bg-background-light text-white flex flex-col justify-center gap-2`}
       >
         <div className='flex flex-col gap-2 md:flex-row'>
           <div className='text-xl font-bold md:text-4xl'>{title}</div>
