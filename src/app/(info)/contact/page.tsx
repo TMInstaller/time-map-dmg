@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
   return (
     <div className='flex flex-col items-center'>
       <div className='w-full mt-6 max-w-content'>
-        <div className='grid grid-cols-11 grid-rows-3 h-[84vh] gap-2'>
+        <div className='grid grid-cols-11 grid-rows-7 md:grid-rows-3 h-[84vh] gap-2'>
           {orbits.map((orbit, index) => (
             <ContactOrbit
               key={index}
