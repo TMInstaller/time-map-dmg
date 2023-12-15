@@ -47,7 +47,7 @@ const MainProjectInfo = () => {
                 <Link
                   href={`https://medium.com/@tminstaller/siliconvalley-winter-bootcamp-remember-plus-korean-803311e5fa9c`}
                 >
-                  <Image src='/medium.png' alt='' fill style={{ objectFit: 'contain' }} />
+                  <Image src='/Medium.png' alt='' fill style={{ objectFit: 'contain' }} />
                 </Link>
               </div>
               <div className='relative col-start-3 col-end-4 hover:scale-105'>
