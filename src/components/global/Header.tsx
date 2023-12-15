@@ -27,6 +27,8 @@ const Header = () => {
     mobile: 'hidden',
   }
 
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`
+
   return (
     <div className={`${container.common} ${container.web} ${container.mobile}`}>
       <div className={`${logo.common} ${logo.web} ${logo.mobile}`}>
@@ -40,9 +42,29 @@ const Header = () => {
         ))}
       </div>
       {/* 햄버거 메뉴 버튼 (모바일 뷰) */}
-      <button className='md:hidden' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        {/* 햄버거 아이콘 */}
-        hamburger
+      <button
+        className='md:hidden flex flex-col h-10 w-10 border-none rounded justify-center items-center group bg-[#BEB5DD]'
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <div
+          className={`${genericHamburgerLine} ${
+            isMenuOpen
+              ? 'rotate-45 translate-y-3 opacity-70 group-hover:opacity-100'
+              : 'opacity-70 group-hover:opacity-100'
+          }`}
+        />
+        <div
+          className={`${genericHamburgerLine} ${
+            isMenuOpen ? 'opacity-0' : 'opacity-70 group-hover:opacity-100'
+          }`}
+        />
+        <div
+          className={`${genericHamburgerLine} ${
+            isMenuOpen
+              ? '-rotate-45 -translate-y-3 opacity-70 group-hover:opacity-100'
+              : 'opacity-70 group-hover:opacity-100'
+          }`}
+        />
       </button>
       {/* 메뉴 슬라이드 (모바일 뷰) */}
       {isMenuOpen && (
@@ -51,15 +73,11 @@ const Header = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {/* 배경 오버레이 */}
-          <div className={`fixed top-0 right-0 w-3/4 h-full bg-background-light pl-4 z-50`}>
+          <div className={`fixed top-16 right-0 w-3/4 h-full bg-background-light pl-4 z-50`}>
             {/* 메뉴 슬라이드 */}
-            <button className='md:hidden h-16 pl-3' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {/* 햄버거 아이콘 */}
-              Close
-            </button>
             {categories.map((category, index) => (
               <Link key={index} href={`/${category.replace(/\s+/g, '').toLowerCase()}`} passHref>
-                <div className='flex align-bottom font-serif text-2xl pt-3 pl-3 h-16 border-t-4 border-background-theme'>
+                <div className='flex align-bottom font-serif text-2xl pt-3 pl-3 h-16 border-b-4 border-background-theme'>
                   {category}
                 </div>
               </Link>
