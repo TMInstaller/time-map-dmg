@@ -96,6 +96,47 @@ li:hover {
   animation-duration: 11s;
 }
 
+.circles li:nth-child(11) {
+  left: 30%;
+  width: 35px;
+  height: 35px;
+  animation-delay: 5s;
+  animation-duration: 20s;
+}
+
+.circles li:nth-child(12) {
+  left: 55%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 8s;
+  animation-duration: 25s;
+}
+
+/* 13번째 항목 */
+.circles li:nth-child(13) {
+  left: 80%;
+  width: 45px;
+  height: 45px;
+  animation-delay: 6s;
+  animation-duration: 30s;
+}
+
+.circles li:nth-child(14) {
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+
+.circles li:nth-child(15) {
+  left: 90%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 4s;
+  animation-duration: 35s;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
