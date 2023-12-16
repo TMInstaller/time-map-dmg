@@ -2,9 +2,12 @@
 import '../intro/IntroAnime.style.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
 const IntroAnime = () => {
+  const router = useRouter()
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
     const speed = 100
@@ -705,7 +708,7 @@ const IntroAnime = () => {
                 x='275'
                 y='280'
                 className='w-[200px] h[100px] animate-pulse hover:cursor-pointer'
-                onClick={() => window.open('https://time-map-dmg.vercel.app/')}
+                onClick={() => router.push('/')}
               />
 
               <path
@@ -792,7 +795,7 @@ const IntroAnime = () => {
                 x='275'
                 y='150'
                 className='w-[200px] h[100px] animate-pulse hover:cursor-pointer'
-                onClick={() => window.open('https://time-map-dmg.vercel.app/')}
+                onClick={() => router.push('/')}
               />
 
               <path
@@ -832,9 +835,9 @@ const IntroAnime = () => {
 
       <div className='scrollElement'></div>
 
-      <a href='https://time-map-dmg.vercel.app/' target='_blank' className='btn btn_works'>
+      <Link href={`/`} className='btn btn_works'>
         My Works
-      </a>
+      </Link>
       <button className='btn hidden md:block' id='fullscr'>
         Go Fullscreen
       </button>

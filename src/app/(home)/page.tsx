@@ -26,9 +26,12 @@ export default function Home() {
     <>
       <HomeBackground />
       <div className={`${container.common} ${container.web} ${container.mobile}`}>
-        <h1 className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile}`}>
+        <div
+          className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}
+        >
           TimeMap.dmg
-        </h1>
+          <div className='text-lg animate-bounce'>- Try to Click Squares! -</div>
+        </div>
         {categories.map((category, index) => (
           <Link key={index} href={`/${category.replace(/\s+/g, '').toLowerCase()}`} passHref>
             <div

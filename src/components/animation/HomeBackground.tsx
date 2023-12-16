@@ -1,6 +1,8 @@
+import { useRouter } from 'next/navigation'
 import './HomeBackground.style.css'
 
 const HomeBackground = () => {
+  const router = useRouter()
   const animateButton = (e: any) => {
     e.preventDefault()
     const target = e.target
@@ -8,7 +10,8 @@ const HomeBackground = () => {
 
     setTimeout(() => {
       target.classList.remove('animateClick')
-    }, 750) // 0.75초 후에 클래스 제거
+      router.push('/intro')
+    }, 1000) // 0.75초 후에 클래스 제거
   }
 
   return (
