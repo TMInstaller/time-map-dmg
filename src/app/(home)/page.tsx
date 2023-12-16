@@ -30,7 +30,7 @@ export default function Home() {
           className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}
         >
           TimeMap.dmg
-          <div className='text-lg animate-bounce'>- Try to Click Squares! -</div>
+          <div className='text-lg animate-bounce'>- Try to Click Floating Squares! -</div>
         </div>
         {categories.map((category, index) => (
           <Link key={index} href={`/${category.replace(/\s+/g, '').toLowerCase()}`} passHref>

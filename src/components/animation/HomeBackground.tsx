@@ -17,7 +17,7 @@ const HomeBackground = () => {
   return (
     <div className='w-screen h-screen fixed z-0'>
       <ul className='circles'>
-        {[...Array(10)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <li key={i} onClick={animateButton}></li>
         ))}
       </ul>
