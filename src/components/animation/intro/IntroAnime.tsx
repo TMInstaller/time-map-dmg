@@ -1,11 +1,10 @@
 'use client'
-import '../animation/style.css'
+import '../intro/IntroAnime.style.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Image from 'next/image'
 import { useEffect } from 'react'
 
-const Animation = () => {
+const IntroAnime = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
     const speed = 100
@@ -843,4 +842,4 @@ const Animation = () => {
   )
 }
 
-export default Animation
+export default IntroAnime
