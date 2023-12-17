@@ -30,7 +30,12 @@ export default function Home() {
           className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}
         >
           TimeMap.dmg
-          <div className='text-lg animate-bounce'>- Try to Click Floating Squares! -</div>
+          <div className='text-sm md:text-lg animate-bounce'>
+            - 뒤에 떠다니는 사각형을 눌러볼 수 있어요! -
+          </div>
+          <div className='text-sm md:text-lg animate-bounce'>
+            - Try to click background Squares! -
+          </div>
         </div>
         {categories.map((category, index) => (
           <Link key={index} href={`/${category.replace(/\s+/g, '').toLowerCase()}`} passHref>

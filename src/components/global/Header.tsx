@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <div className={`${container.common} ${container.web} ${container.mobile}`}>
       <div className={`${logo.common} ${logo.web} ${logo.mobile}`}>
-        <Link href='/'>TimeMap.dmg</Link>
+        <Link href='/intro'>TimeMap.dmg</Link>
       </div>
       <div className={`${webMenu.common} ${webMenu.web} ${webMenu.mobile}`}>
         {categories.map((category, index) => (
