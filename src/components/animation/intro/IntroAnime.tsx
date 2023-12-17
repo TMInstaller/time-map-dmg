@@ -708,7 +708,7 @@ const IntroAnime = () => {
                 x='275'
                 y='280'
                 className='w-[200px] h[100px] animate-pulse hover:cursor-pointer'
-                onClick={() => router.push('/')}
+                onClick={() => router.push('/intro')}
               />
 
               <path
@@ -795,7 +795,7 @@ const IntroAnime = () => {
                 x='275'
                 y='150'
                 className='w-[200px] h[100px] animate-pulse hover:cursor-pointer'
-                onClick={() => router.push('/')}
+                onClick={() => router.push('/intro')}
               />
 
               <path

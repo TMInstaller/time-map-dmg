@@ -1,47 +1,24 @@
 'use client'
-import HomeBackground from '@/components/animation/HomeBackground'
-import Link from 'next/link'
-import React from 'react'
+import IntroAnime from '@/components/animation/intro/IntroAnime'
+import ParticuleClick from '@/components/animation/click/ParticuleClick'
 
-export default function Home() {
-  const container = {
-    common: 'grid gap-4 w-screen h-screen text-center',
-    web: 'md:grid-cols-2 md:p-10',
-    mobile: 'grid-cols-1 p-4',
-  }
-  const serviceName = {
-    common: 'font-bold flex justify-center items-center text-white',
-    web: 'md:col-span-2 md:text-6xl',
-    mobile: 'col-span-1 text-4xl',
-  }
-  const categoryName = {
-    common: 'relative shadow-md font-bold',
-    hover: 'hover:shadow-lg hover:text-white hover:bg-black hover:bg-opacity-40 hover:rounded-xl',
-    web: 'md:p-8 md:text-3xl md:bg-transparent md:text-text-normal',
-    mobile: 'p-4 text-xl bg-black bg-opacity-30 rounded-xl text-white',
-  }
-  const categories: string[] = ['Who am I', 'Projects', 'Activities', 'Contact']
-
+const Intro = () => {
   return (
     <>
-      <HomeBackground />
-      <div className={`${container.common} ${container.web} ${container.mobile}`}>
-        <div
-          className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}
-        >
-          TimeMap.dmg
-          <div className='text-lg animate-bounce'>- Try to Click Floating Squares! -</div>
-        </div>
-        {categories.map((category, index) => (
-          <Link key={index} href={`/${category.replace(/\s+/g, '').toLowerCase()}`} passHref>
-            <div
-              className={`${categoryName.common} ${categoryName.hover} ${categoryName.web} ${categoryName.mobile}`}
-            >
-              {category}
-            </div>
-          </Link>
-        ))}
+      <div className='fixed w-screen'>
+        <ParticuleClick />
+      </div>
+      <div className='relative'>
+        <IntroAnime />
       </div>
     </>
   )
 }
+
+export default Intro
+
+/** TODO:
+ * 1. ParticuleClick이 IntroAime의 rect id bg2에도 렌더링되도록 구현
+ * 1.1. 현재 상황은 IntroAnime의 최후방에서 렌더링되고 있음
+ * 2. 따라서 스크롤 위치에 따라 z-index를 변경해서 렌더링되도록 구현
+ */
