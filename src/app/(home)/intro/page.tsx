@@ -1,9 +1,10 @@
 'use client'
 import HomeBackground from '@/components/animation/HomeBackground'
+import ParticuleClick from '@/components/animation/click/ParticuleClick'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Home() {
+const Intro = () => {
   const container = {
     common: 'grid gap-4 w-screen h-screen text-center',
     web: 'md:grid-cols-2 md:p-10',
@@ -30,10 +31,10 @@ export default function Home() {
           className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}
         >
           TimeMap.dmg
-          <div className='text-sm md:text-lg animate-bounce'>
+          <div className='text-sm md:text-lg animate-bounce hover:cursor-default'>
             - 뒤에 떠다니는 사각형을 눌러볼 수 있어요! -
           </div>
-          <div className='text-sm md:text-lg animate-bounce'>
+          <div className='text-sm md:text-lg animate-bounce hover:cursor-default'>
             - Try to click background Squares! -
           </div>
         </div>
@@ -50,3 +51,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Intro

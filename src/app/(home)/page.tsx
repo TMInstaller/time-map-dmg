@@ -2,7 +2,7 @@
 import IntroAnime from '@/components/animation/intro/IntroAnime'
 import ParticuleClick from '@/components/animation/click/ParticuleClick'
 
-const Intro = () => {
+const Home = () => {
   return (
     <>
       <div className='fixed w-screen'>
@@ -15,7 +15,7 @@ const Intro = () => {
   )
 }
 
-export default Intro
+export default Home
 
 /** TODO:
  * 1. ParticuleClick이 IntroAime의 rect id bg2에도 렌더링되도록 구현
