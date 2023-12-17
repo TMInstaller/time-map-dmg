@@ -139,7 +139,7 @@ const ParticuleClick = () => {
             return p.endPos.y
           },
           radius: 0.1,
-          duration: anime.random(1200, 1800),
+          duration: anime.random(1200, 2400),
           easing: 'easeOutExpo',
           update: renderParticule,
         })
@@ -177,8 +177,13 @@ const ParticuleClick = () => {
 
     // 컴포넌트 언마운트 시 이벤트 리스너 제거
     return () => {
-      window.removeEventListener('mousedown' as any, setCanvasSize)
-      document.removeEventListener(tap, updateCoords as EventListener)
+      window.removeEventListener('resize', setCanvasSize)
+      document.removeEventListener(tap, (e) => {
+        window.requestAnimationFrame(() => {
+          updateCoords(e)
+          animateParticules(pointerX, pointerY)
+        })
+      })
     }
   }, [])
 

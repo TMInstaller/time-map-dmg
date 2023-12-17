@@ -3,9 +3,9 @@ import './HomeBackground.style.css'
 
 const HomeBackground = () => {
   const router = useRouter()
-  const animateButton = (e: any) => {
+  const animateButton = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()
-    const target = e.target
+    const target = e.currentTarget
     target.classList.add('animateClick')
 
     setTimeout(() => {
