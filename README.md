@@ -1,6 +1,6 @@
 # DEMO (V1)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EE_m0jAGuVw?si=QPYPn-oT5OfFWJzz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Demo](https://i.imgur.com/t7xuFP1.png)](https://www.youtube.com/embed/EE_m0jAGuVw?si=QPYPn-oT5OfFWJzz)
 
 ## TimeMap.dmg UPDATE
 
