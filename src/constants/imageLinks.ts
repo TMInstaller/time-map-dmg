@@ -1,33 +1,33 @@
 export const LOGO_IMG = {
   framework: {
-    nextJS: '/logo/NextJS.png',
-    svelteKit: '/logo/SvelteKit.png',
+    nextJS: '/logo/NextJS.webp',
+    svelteKit: '/logo/SvelteKit.webp',
   },
   library: {
-    react: '/logo/React.png',
-    svelte: '/logo/Svelte.png',
-    d3: '/logo/D3.png',
-    highcharts: '/logo/Highcharts.png',
-    threeJS: '/logo/Three.png',
+    react: '/logo/React.webp',
+    svelte: '/logo/Svelte.webp',
+    d3: '/logo/D3.webp',
+    highcharts: '/logo/Highcharts.webp',
+    threeJS: '/logo/Three.webp',
   },
   css: {
-    tailwind: '/logo/Tailwind.png',
-    emotion: '/logo/Emotion.png',
-    sass: '/logo/Sass.png',
+    tailwind: '/logo/Tailwind.webp',
+    emotion: '/logo/Emotion.webp',
+    sass: '/logo/Sass.webp',
   },
   language: {
-    javaScript: '/logo/JavaScript.png',
-    typeScript: '/logo/TypeScript.png',
+    javaScript: '/logo/JavaScript.webp',
+    typeScript: '/logo/TypeScript.webp',
   },
   packageManager: {
-    yarn: '/logo/Yarn.png',
-    npm: '/logo/Npm.png',
+    yarn: '/logo/Yarn.webp',
+    npm: '/logo/Npm.webp',
   },
   communication: {
-    slack: '/logo/Slack.png',
-    figma: '/logo/Figma.png',
-    jira: '/logo/Jira.png',
-    notion: '/logo/Notion.png',
+    slack: '/logo/Slack.webp',
+    figma: '/logo/Figma.webp',
+    jira: '/logo/Jira.webp',
+    notion: '/logo/Notion.webp',
   },
 }
 
