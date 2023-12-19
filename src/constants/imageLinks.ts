@@ -29,6 +29,11 @@ export const LOGO_IMG = {
     jira: '/logo/Jira.webp',
     notion: '/logo/Notion.webp',
   },
+  info: {
+    github: '/logo/Github.webp',
+    medium: '/logo/Medium.webp',
+    tistory: '/logo/Tistory.webp',
+  },
 }
 
 export const CAPTURE_IMG = {
