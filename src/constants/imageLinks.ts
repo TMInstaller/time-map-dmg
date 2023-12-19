@@ -58,12 +58,12 @@ export const CAPTURE_IMG = {
 }
 
 export const ACTICITY_IMG = {
-  techeerPartners: '/TecheerPartners.png',
-  woowa: '/Woowa.png',
-  goodNight2nd: '/GoodNight2nd.png',
-  summerBootcamp2023: '/2023SummerBootcamp.png',
-  bangBangGo: '/BangBangGo.png',
-  goodNight: '/GoodNight.png',
-  winterBootcamp2022: '/2022WinterBootcamp.png',
-  nananana: '/nananana.png',
+  techeerPartners: '/activity/techeerpartners.webp',
+  woowa: '/activity/woowa.webp',
+  goodNight2nd: '/activity/goodnight2nd.webp',
+  summerBootcamp2023: '/activity/2023summerbootcamp.webp',
+  bangBangGo: '/activity/bangbanggo.webp',
+  goodNight: '/activity/goodnight.webp',
+  winterBootcamp2022: '/activity/2022winterbootcamp.webp',
+  nananana: '/activity/nananana.webp',
 }
