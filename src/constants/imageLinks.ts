@@ -44,18 +44,7 @@ export const ICON_IMG = {
   mail: '/icon/mail_icon.webp',
   medium: '/icon/medium_icon.webp',
   tistory: '/icon/tistory_icon.webp',
-}
-
-export const CAPTURE_IMG = {
-  techeerPartners: '/TECHEERPartners.png',
-  woowa: '/Woowa.png',
-  goodNight2nd: '/GoodNight2nd.png',
-  summerBootcamp2023: '/2023SummerBootcamp.png',
-  bangBangGo: '/BangBangGo.png',
-  goodNight: '/GoodNight.png',
-  winterBootcamp2022: '/2022WinterBootcamp.png',
-  nananana: '/nananana.png',
-}
+} as const
 
 export const ACTICITY_IMG = {
   techeerPartners: '/activity/techeerpartners.webp',
@@ -66,4 +55,4 @@ export const ACTICITY_IMG = {
   goodNight: '/activity/goodnight.webp',
   winterBootcamp2022: '/activity/2022winterbootcamp.webp',
   nananana: '/activity/nananana.webp',
-}
+} as const

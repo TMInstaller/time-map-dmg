@@ -1,3 +1,4 @@
+import { ICON_IMG } from '@/constants/imageLinks'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -40,19 +41,19 @@ const MainProjectInfo = () => {
             <div className='grid w-full h-24 grid-cols-3 col-start-1 col-end-3 py-2 rounded-lg bg-background-boxlight hover:scale-105'>
               <div className='relative col-start-1 col-end-2 hover:scale-105'>
                 <Link href={`https://github.com/SV-Summer-BootCamp-Team-F`}>
-                  <Image src='/github.png' alt='' fill style={{ objectFit: 'contain' }} />
+                  <Image src={ICON_IMG.github} alt='' fill style={{ objectFit: 'contain' }} />
                 </Link>
               </div>
               <div className='relative col-start-2 col-end-3 hover:scale-105'>
                 <Link
                   href={`https://medium.com/@tminstaller/siliconvalley-winter-bootcamp-remember-plus-korean-803311e5fa9c`}
                 >
-                  <Image src='/Medium.png' alt='' fill style={{ objectFit: 'contain' }} />
+                  <Image src={ICON_IMG.medium} alt='' fill style={{ objectFit: 'contain' }} />
                 </Link>
               </div>
               <div className='relative col-start-3 col-end-4 hover:scale-105'>
                 <Link href={`https://time-map-installer.tistory.com/250`}>
-                  <Image src='/tistory.png' alt='' fill style={{ objectFit: 'contain' }} />
+                  <Image src={ICON_IMG.tistory} alt='' fill style={{ objectFit: 'contain' }} />
                 </Link>
               </div>
             </div>
