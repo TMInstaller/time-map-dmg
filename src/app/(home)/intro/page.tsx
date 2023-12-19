@@ -1,6 +1,5 @@
 'use client'
-import HomeBackground from '@/components/animation/HomeBackground'
-import ParticuleClick from '@/components/animation/click/ParticuleClick'
+import IntroBackground from '@/components/animation/IntroBackground'
 import Link from 'next/link'
 import React from 'react'
 
@@ -25,7 +24,7 @@ const Intro = () => {
 
   return (
     <>
-      <HomeBackground />
+      <IntroBackground />
       <div className={`${container.common} ${container.web} ${container.mobile}`}>
         <div
           className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}

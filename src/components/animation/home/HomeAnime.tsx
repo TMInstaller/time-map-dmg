@@ -1,12 +1,12 @@
 'use client'
-import '../intro/IntroAnime.style.css'
+import './HomeAnime.style.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
-const IntroAnime = () => {
+const HomeAnime = () => {
   const router = useRouter()
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -847,4 +847,4 @@ const IntroAnime = () => {
   )
 }
 
-export default IntroAnime
+export default HomeAnime
