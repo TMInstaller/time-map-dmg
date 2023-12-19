@@ -33,7 +33,17 @@ export const LOGO_IMG = {
     github: '/logo/Github.webp',
     medium: '/logo/Medium.webp',
     tistory: '/logo/Tistory.webp',
+    disquiet: '/logo/Disquiet.webp',
   },
+} as const
+
+export const ICON_IMG = {
+  github: '/icon/github_icon.webp',
+  kakao: '/icon/kakao_icon.webp',
+  linkedIn: '/icon/linkedin_icon.webp',
+  mail: '/icon/mail_icon.webp',
+  medium: '/icon/medium_icon.webp',
+  tistory: '/icon/tistory_icon.webp',
 }
 
 export const CAPTURE_IMG = {
@@ -45,16 +55,6 @@ export const CAPTURE_IMG = {
   goodNight: '/GoodNight.png',
   winterBootcamp2022: '/2022WinterBootcamp.png',
   nananana: '/nananana.png',
-}
-
-export const INFO_IMG = {
-  tistory: '/tistory.png',
-  github: '/github.png',
-  medium: '/Medium.png',
-  disquiet: '/Disquiet.png',
-  kakao: '/Kakao.png',
-  mail: '/Mail.png',
-  linkedIn: '/linkedIn.png',
 }
 
 export const ACTICITY_IMG = {
