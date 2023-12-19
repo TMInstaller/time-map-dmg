@@ -1,7 +1,7 @@
 import { useRouter } from 'next/navigation'
-import './HomeBackground.style.css'
+import './IntroBackground.style.css'
 
-const HomeBackground = () => {
+const IntroBackground = () => {
   const router = useRouter()
   const animateButton = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()
@@ -25,4 +25,4 @@ const HomeBackground = () => {
   )
 }
 
-export default HomeBackground
+export default IntroBackground
