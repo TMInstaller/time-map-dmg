@@ -53,7 +53,7 @@ export function getAllProjects(fields: string[] = []) {
   return posts
 }
 
-// 마크다운 문자열을 HTML 문자열로 변환하는 함수
+/** 마크다운 문자열을 HTML 문자열로 변환하는 함수  */
 export async function markdownToHtml(markdown: string) {
   const result = await remark().use(html).process(markdown)
   return result.toString()
