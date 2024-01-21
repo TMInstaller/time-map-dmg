@@ -2,6 +2,7 @@
 title: 'Crop Doctor'
 date: '2023-02-01'
 description: '아픈 작물을 손에 담아 분석하다, 작물진단 서비스 Crop Doctor'
+imageUrl: '/CropDoctor.png'
 ---
 
 # 🌱 어서오세요, 어디가 아파서 오셨나요?
