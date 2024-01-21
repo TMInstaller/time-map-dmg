@@ -29,9 +29,9 @@ function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className='mt-8 flex justify-center items-center'>
+    <div className='mt-8 flex justify-center items-center px-4'>
       {/* 화면 전체 높이에 걸쳐 중앙 정렬 */}
-      <article className='w-full md:w-2/3 flex flex-col px-4 md:px-0'>
+      <article className='w-full md:w-2/3 flex flex-col px-4 py-8 border border-white rounded-xl md:max-w-[900px]'>
         {/* 전체 너비에서 반으로 줄임 */}
         <h1 className='text-4xl font-bold text-center'>{project.title}</h1>
         <ReactMarkdown
