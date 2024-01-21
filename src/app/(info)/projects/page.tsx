@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 function Projects() {
-  const projects = getAllProjects(['slug', 'title'])
+  const projects = getAllProjects(['slug', 'title', 'imageUrl'])
   // 필터링 및 정렬 로직 추가 위치
 
   return (

@@ -34,8 +34,9 @@ export function getProjectBySlug(slug: string, fields: string[] = []) {
     if (field === 'content') {
       items[field] = content
     }
-
-    if (typeof data[field] !== 'undefined') {
+    if (field === 'imageUrl' && typeof data[field] !== 'undefined') {
+      items[field] = data[field] // 'imageUrl' 필드가 존재하면 그 값을 할당
+    } else if (typeof data[field] !== 'undefined') {
       items[field] = data[field]
     }
   })
