@@ -235,7 +235,6 @@ const HomeAnime = () => {
     if (fsEnter) {
       fsEnter.addEventListener('click', function (e) {
         e.preventDefault()
-        console.log('Fullscreen button clicked') // 디버깅을 위한 로그
         if (!fullscreen) {
           fullscreen = true
           document.documentElement.requestFullscreen().catch((err) => {
