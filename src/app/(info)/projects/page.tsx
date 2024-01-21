@@ -1,4 +1,4 @@
-import MainProjectInfo from '@/components/info/MainProjectInfo'
+// import MainProjectInfo from '@/components/info/MainProjectInfo'
 import withLayout from '@/hoc/withLayout'
 import { getAllProjects } from '@/lib/markdown'
 import Image from 'next/image'
@@ -19,12 +19,14 @@ function Projects() {
           <div key={project.slug} className='relative rounded-xl hover:scale-105'>
             <Link href={`/projects/${project.slug}`}>
               {project.imageUrl ? (
-                <Image
-                  src={project.imageUrl}
-                  alt={project.title}
-                  layout='fill'
-                  style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
-                />
+                <div className='flex justify-center items-center h-48 rounded-xl'>
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    layout='fill'
+                    style={{ overflow: 'hidden', borderRadius: '0.75rem' }}
+                  />
+                </div>
               ) : (
                 <div className='flex justify-center items-center h-48 bg-gray-200 rounded-xl'>
                   <span className='text-gray-700'>No Image Available</span>
