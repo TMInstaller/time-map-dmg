@@ -27,9 +27,11 @@ const Intro = () => {
       <IntroBackground />
       <div className={`${container.common} ${container.web} ${container.mobile}`}>
         <div
-          className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4`}
+          className={`${serviceName.common} ${serviceName.web} ${serviceName.mobile} flex-col gap-4 z-50`}
         >
-          TimeMap.dmg
+          <div className='cursor-pointer'>
+            <Link href={`/`}>TimeMap.dmg</Link>
+          </div>
           <div className='text-sm md:text-lg animate-bounce hover:cursor-default'>
             - 뒤에 떠다니는 사각형을 눌러볼 수 있어요! -
           </div>

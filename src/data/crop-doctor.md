@@ -1,13 +1,13 @@
 ---
 title: 'Crop Doctor'
 date: '2023-02-01'
-description: '아픈 작물을 손에 담아 분석하다, 작물진단 서비스 Crop Doctor'
+description: '아픈 작물을 분석하다, 작물 병해 진단 서비스 Crop Doctor'
 imageUrl: '/CropDoctor.png'
 ---
 
 # 🌱 어서오세요, 어디가 아파서 오셨나요?
 
-> 아픈 작물을 손에 담아 분석하다, 작물진단 서비스 Crop Doctor
+> 어디 아픈 곳은 없는 지 확인해줄게요. 작물 병해 진단 서비스, Crop Doctor
 
 ![](https://i.imgur.com/meXlsCh.png)
 
@@ -28,7 +28,7 @@ Backend: `Django`, `Gunicorn`, `Swagger`, `NGINX`, `RabbitMQ`, `Celery`
 Monitoring: `Prometheus`, `Grafana`, `Elasticsearch`, `Logstash`, `Kibana`, `Slack`  
 Database & Storage: `Amazon RDS`, `Amazon S3`, `MySQL`  
 DevOps: `Docker`, `Amazon EC2`, `Github Actions`  
-AI: `Pytorch`, `Yolo`
+AI: `PyTorch`, `Yolo`
 
 ---
 

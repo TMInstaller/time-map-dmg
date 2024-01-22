@@ -10,7 +10,7 @@ const IntroBackground = () => {
 
     setTimeout(() => {
       target.classList.remove('animateClick')
-      router.push('/')
+      // router.push('/')
     }, 1000) // 0.75초 후에 클래스 제거
   }
 
