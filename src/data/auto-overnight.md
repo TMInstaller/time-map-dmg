@@ -8,16 +8,6 @@ description: '프로젝트에 대한 간략한 설명'
 
 > 외박신청을 쉽고 빠르게 도와준다고?
 
-V1 제작자
-
-- Frontend: [ww8007](https://github.com/ww8007)
-- Backend: [sunaookamishiroko](https://github.com/sunaookamishiroko)
-
-V2 제작자
-
-- Frontend: [TMInstaller](https://github.com/TMInstaller), [gyeong3un2](https://github.com/gyeong3un2)
-- Backend: [kjeongh](https://github.com/kjeongh), [kimhalin](https://github.com/kimhalin)
-
 ## 기술스택 (Frontend)
 
 Frameworks: `React Native Expo` \
@@ -53,3 +43,15 @@ Frameworks: `Nest`
 > 앱 설정
 
 ![](https://i.imgur.com/3wIQaGW.png)
+
+## 👥 Our Team(click to visit github)
+
+> V1 Engineers
+
+- Frontend: [ww8007](https://github.com/ww8007)
+- Backend: [sunaookamishiroko](https://github.com/sunaookamishiroko)
+
+> V2 Engineers
+
+- Frontend: [TMInstaller](https://github.com/TMInstaller), [gyeong3un2](https://github.com/gyeong3un2)
+- Backend: [kjeongh](https://github.com/kjeongh), [kimhalin](https://github.com/kimhalin)
