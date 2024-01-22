@@ -2,6 +2,7 @@
 title: 'HQ-Routine'
 date: '2023-06-15'
 description: '프로젝트에 대한 간략한 설명'
+imageUrl: '/HQRoutine.png'
 ---
 
 여기에 프로젝트에 대한 상세한 내용이 마크다운 형식으로 작성됩니다.

@@ -2,6 +2,7 @@
 title: 'Auto-Overnight'
 date: '2024-01-13'
 description: '프로젝트에 대한 간략한 설명'
+imageUrl: '/auto-overnight.png'
 ---
 
 # 기숙사생들을 위한 외박신청 어플리케이션!
