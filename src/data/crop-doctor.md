@@ -28,7 +28,7 @@ Backend: `Django`, `Gunicorn`, `Swagger`, `NGINX`, `RabbitMQ`, `Celery`
 Monitoring: `Prometheus`, `Grafana`, `Elasticsearch`, `Logstash`, `Kibana`, `Slack`  
 Database & Storage: `Amazon RDS`, `Amazon S3`, `MySQL`  
 DevOps: `Docker`, `Amazon EC2`, `Github Actions`  
-AI: `Pytorch`, `Yolo`
+AI: `PyTorch`, `Yolo`
 
 ---
 
