@@ -68,10 +68,10 @@ Backend: `Spring Boot`, `NGiNX`, `MySQL`
 
 > Frontend Engineer
 
-[**TMInstaller**](https://github.com/TMInstaller)
+[**TMInstaller**](https://github.com/TMInstaller)  
 [**JunJongHun**](https://github.com/JunJongHun)
 
 > Backend Engineer
 
-[**Sith-call**(Leader)](https://github.com/Sith-call)
+[**Sith-call**(Leader)](https://github.com/Sith-call)  
 [**bjo6300**](https://github.com/bjo6300)
