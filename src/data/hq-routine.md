@@ -41,7 +41,7 @@ Backend: `Spring Boot`, `NGiNX`, `MySQL`
 
 ## Demo
 
-[![](https://i.imgur.com/3tmn3Fw.png)](https://studio.youtube.com/video/KrQiQmyldRw/edit)
+[![](https://i.imgur.com/3tmn3Fw.png)](https://youtu.be/KrQiQmyldRw)
 
 ---
 
